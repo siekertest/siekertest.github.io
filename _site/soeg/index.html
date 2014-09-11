@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>
+        
+            Søg | Infiniteloop.dk | Infiniteloop.dk
+        
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/cosmo/bootstrap.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'> 
+        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="sidebar" class="text-center">
+            <h2><strong>Infinite</strong>Loop</h2>
+<h6>af morten sieker</h6>
+<h5>En weblog om teknologi, softwareudvikling og hverdagens små nørderier</h5>
+<a href="#" class="menutoggle"><i class="fa fa-bars"></i></a>
+<nav id="sidemenu">
+    <ul class="list-unstyled">
+        <li><a href="/">Hjem</a></li>
+        <li><a href="/arkiv">Arkiv</a></li>
+        <li><a href="/soeg">Søg</a></li>
+        <li><a href="/om">Om</a></li>
+        <li><a href="http://infiniteloop.dk/rss.xml" target="_blank">RSS <i class="icon-rss"></i></a></li>
+    </ul>
+</nav>
+<!--div id="sidesocials" class="row">
+    <div class="col-xs-12" style="margin-bottom: 5px;">
+        KONTAKT
+    </div>
+    <div class="col-xs-3"></div>
+    <div class="col-xs-3 text-center">
+        <a href="http://twitter.com/mortensieker" target="_blank"><i class="icon-twitter"></i></a>
+    </div>
+    <div class=" col-xs-3 text-center">
+        <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#111;&#114;&#116;&#101;&#110;&#64;&#105;&#110;&#102;&#105;&#110;&#105;&#116;&#101;&#108;&#111;&#111;&#112;&#46;&#100;&#107;'>
+        <i class="icon-envelope"></i></a>
+    </div>
+    <div class="col-xs-3"></div>
+</div-->
+        </div>
+        <div id="container">
+            <div id="stage">
+                  <h1>Søg</h1>
+  <br/>
+  <!-- Search form -->
+  <form method="get" action="/search" data-search-form class="form" role="form">
+    <div class="form-group">
+      <div class="input-group">
+        <input type="search" name="q" id="q" class="form-control" placeholder="Søg efter..." data-search-input />
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="submit">Søg</button>
+        </span>
+      </div>
+    </div>
+  </form>
+
+  <!-- Search results placeholder -->
+  <p data-search-found>
+    <span data-search-found-count></span> resultater fundet for &ldquo;<span data-search-found-term></span>&rdquo;.
+  </p>
+  <div data-search-results class="soeg_resultat"></div>
+
+
+
+  <!-- Search result template -->
+  <script type="text/x-template" id="search-result">
+    <div>
+      <h4><a href="##Url##">##Title##</a> (##Date##)</h4>
+    </div>
+  </script>
+  <!-- Search script - Must appear after template -->
+  <script src="/js/search.js"></script>
+
+  <!--
+    search-script: https://github.com/mathaywarduk/jekyll-search
+
+  -->
+            </div>
+        </div>
+        
+        <script src="/js/loop.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-3809485-8', 'infiniteloop.dk');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

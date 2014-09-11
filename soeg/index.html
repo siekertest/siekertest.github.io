@@ -1,0 +1,40 @@
+---
+layout: default
+title: Søg | Infiniteloop.dk
+search_omit: true
+---
+  <h1>Søg</h1>
+  <br/>
+  <!-- Search form -->
+  <form method="get" action="/search" data-search-form class="form" role="form">
+    <div class="form-group">
+      <div class="input-group">
+        <input type="search" name="q" id="q" class="form-control" placeholder="Søg efter..." data-search-input />
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="submit">Søg</button>
+        </span>
+      </div>
+    </div>
+  </form>
+
+  <!-- Search results placeholder -->
+  <p data-search-found>
+    <span data-search-found-count></span> resultater fundet for &ldquo;<span data-search-found-term></span>&rdquo;.
+  </p>
+  <div data-search-results class="soeg_resultat"></div>
+
+
+
+  <!-- Search result template -->
+  <script type="text/x-template" id="search-result">
+    <div>
+      <h4><a href="##Url##">##Title##</a> (##Date##)</h4>
+    </div>
+  </script>
+  <!-- Search script - Must appear after template -->
+  <script src="/js/search.js"></script>
+
+  <!--
+    search-script: https://github.com/mathaywarduk/jekyll-search
+
+  -->

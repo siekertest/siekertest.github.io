@@ -1,0 +1,26 @@
+---
+layout: default
+title: Arkiv | Infiniteloop.dk
+---
+<div id="main">
+    <table class="archive">
+    {% assign gyear = 0 %}
+    {% for post in site.posts%}
+        <tr>
+        {% assign page = post %}
+        {% assign year =  post.date | date: "%Y")  %}
+        {% if gyear != year %}
+            {% assign gyear = year %}
+            <td class="year">
+            <h1>{{gyear}}</h1></td>
+            <td></td>
+            </tr>
+            <tr>
+        {% endif %}
+    
+        <td class="date">{{ post.date | date_to_string }}</td>
+        <td class="link"><h5><a class="archive_link_title" href="{{ post.url }}">{{ post.title }}</a></h5></td>
+        </tr>
+    {% endfor %}
+    </table>
+</div>

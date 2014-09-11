@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>
+        
+            Infiniteloop | Infiniteloop.dk
+        
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/cosmo/bootstrap.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'> 
+        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="sidebar" class="text-center">
+            <h2><strong>Infinite</strong>Loop</h2>
+<h6>af morten sieker</h6>
+<h5>En weblog om teknologi, softwareudvikling og hverdagens små nørderier</h5>
+<a href="#" class="menutoggle"><i class="fa fa-bars"></i></a>
+<nav id="sidemenu">
+    <ul class="list-unstyled">
+        <li><a href="/">Hjem</a></li>
+        <li><a href="/arkiv">Arkiv</a></li>
+        <li><a href="/soeg">Søg</a></li>
+        <li><a href="/om">Om</a></li>
+        <li><a href="http://infiniteloop.dk/rss.xml" target="_blank">RSS <i class="icon-rss"></i></a></li>
+    </ul>
+</nav>
+<!--div id="sidesocials" class="row">
+    <div class="col-xs-12" style="margin-bottom: 5px;">
+        KONTAKT
+    </div>
+    <div class="col-xs-3"></div>
+    <div class="col-xs-3 text-center">
+        <a href="http://twitter.com/mortensieker" target="_blank"><i class="icon-twitter"></i></a>
+    </div>
+    <div class=" col-xs-3 text-center">
+        <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#111;&#114;&#116;&#101;&#110;&#64;&#105;&#110;&#102;&#105;&#110;&#105;&#116;&#101;&#108;&#111;&#111;&#112;&#46;&#100;&#107;'>
+        <i class="icon-envelope"></i></a>
+    </div>
+    <div class="col-xs-3"></div>
+</div-->
+        </div>
+        <div id="container">
+            <div id="stage">
+                <div class="posts">
+    
+        <section class="post">
+    <h1><a href="/2014/06/06/php-rest.html">PHP og RESTful services  &#xffeb;</a></h1>
+     
+     <h3 class="postdate">
+        <i class="fa fa-tag"></i>
+        
+            <a href="/emne/php.html" title="PHP">PHP</a> /
+        
+            <a href="/emne/rest.html" title="REST">REST</a> /
+        
+        06&nbsp;Juni&nbsp;2014</h3>
+     
+    <article class="markdown">
+        
+            <p>I samme stil som mit indlæg med /2014/06/01/jee7-rest.html så vil jeg her vise hvor nemt det er at komme igang med PHP og RESTful services.</p>
+
+<p>I modsætning til det forrige indlæg vil jeg denne gang ikke skrive det selv. Jeg vil derimod gøre brug af et lille framework kaldet <strong><a href="http://www.slimframework.com/">Slim</a></strong>.  </p>
+
+<p>Det vil ikke være noget problem at skrive det hele selv, det kræver bare alt alt for meget kode - og indeholder så mange elementer man selv skal tage hånd om, at det hurtigt bliver uoverskueligt. (Tro mig, jeg har skrevet mange REST services i PHP før jeg fandt Slim).</p>
+
+<p>Jeg er også stor fortaler for at bruge 3-parts frameworks. Og i særdeleshed light-weight frameworks som <em>Slim</em>, der ikke prøver på at være noget stort og redde hele verden. Slim gør én ting, og det gør det godt.</p>
+
+<p>For et par år siden kom der et yderligere lille framework til PHP jeg også vil gøre brug af her, nemlig <a href="https://getcomposer.org/">Composer</a>. Composer er et simpelt &quot;dependency management&quot; tool til PHP meget lig det man kan lave i <em>maven</em> og <em>gradle</em> til Java apps.
+En dybdegående gennemgang af <em>Composer</em> må komme en anden god gang, så indtil videre går jeg udfra at det er installeret og på din path.</p>
+
+<p>For at få Composer til at hente nyeste udgave af Slim ind i dit projekt skal du tilføje følgende til din <code>composer.json</code></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&quot;require&quot;: {
+        &quot;slim/slim&quot;: &quot;2.*&quot;
+}
+</code></pre></div>
+<p>Og derefter køre <code>composer install</code>.</p>
+
+<p>Du har nu hentet Slim frameworket ned i en folder kaldet &quot;Vendor&quot; i roden på din applikation, og har nu alt hvad der skal til for at lave en ultra letvægts RESTful service i PHP.</p>
+
+<p>Start med at lave en <code>index.php</code> fil med følgende indhold
+<script src="https://gist.github.com/mortensieker/a28eddb37db3c12e2870.js"> </script></p>
+
+<p>Linie 2 er Slims automatiske fil/afhængigheds-loader. Det er ikke noget du skal tænke videre over. Men det den gør er at hver gang der refereres til en fil i Slim frameworket, som ikke er inkluderet så finder den filen og gør det for dig.</p>
+
+<p>Linie 4 starter en ny Slim app, og her er måske noget nyt alt efter hvilken version af PHP du plejer at køre. I PHP 5.3 blev der indfør namespaces, som man kender fra sprog såsom Java, C# osv. osv. Det man kan undre sig lidt over er måden hvorpå det er implementeret. Nemlig som \Pakke\ istedet for en dot-notation. Oh well, det er ikke den eneste ting ved PHP der er underlig.</p>
+
+<p>Fra linie 6 og frem kommer vi til det sjove. Linie 6-8 er i bund og grund en REST resource i sin simpleste form. Man vælger request metoden, her en GET. Angiver siten og input parametre og til slut angiver det kode der skal eksekveres i en closure / anonym metode.</p>
+
+<p>Linie 10-12 er det samme bare med et POST kald.</p>
+
+<p>Linie 14 starter Slim applikationen og den lytter nu efter input.</p>
+
+<p>En sidste ting der mangler er en <code>.htaccess</code> fil der kan hjælpe dig med at route alle kald hen til din <code>index.php</code> fil.
+Så lav en ny .htaccess fil i roden på din applikation og giv den følgende indhold:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
+</code></pre></div>
+<p>Dette er i bund og grund alt der skal til for at lave en RESTful service i PHP. Der ligger selvfølgelig en masse kode inde i Slim frameworket, men det skal vi heldigvis ikke tænke over.</p>
+
+<p>Servicen kan nu rammes på <strong>http://localhost/dit-resource-navn/</strong></p>
+
+<p>Slim indeholder rigtigt mange fede muligheder for at lave gode RESTful services så giv deres dokumentation et kig før du går igang.</p>
+
+<p>En kørende udgave af ovenstående kode kan finde på <a href="https://github.com/mortensieker/infiniteloop-samples/tree/master/php-rest">GitHub</a></p>
+
+<p>Og som altid, er der spørgsmål så fang mig på <a href="http://twitter.com/mortensieker">Twitter</a></p>
+
+        
+    </article>
+    
+</section>
+
+      <!--li><span>06 Jun 2014</span> &raquo; <a href="/2014/06/06/php-rest.html">PHP og RESTful services</a></li-->
+    
+        <section class="post">
+    <h1><a href="/2014/06/03/applescript-basics.html">Applescript - The basics  &#xffeb;</a></h1>
+     
+     <h3 class="postdate">
+        <i class="fa fa-tag"></i>
+        
+            <a href="/emne/applescript.html" title="AppleScript">AppleScript</a> /
+        
+        03&nbsp;Juni&nbsp;2014</h3>
+     
+    <article class="markdown">
+        
+            <p>Dette indlæg er til Mac folket. Det omhandler nemlig noget så spændende som <strong>Applescript</strong>.<br>
+Dette kunne måske lyde skræmmende for den gængse &quot;ikke udviklertype&quot; macbruger. Men det skulle gerne i løbet af indlægget stå klart, at det faktisk ikke er helt så kompleks og ret nemt at komme igang med.</p>
+
+<p><em>AppleScript</em> er dog ikke noget jeg hurtigt kan gennemgå i én artikel. Så dette vil være en hurtig intro til nogle af de sjove ting man kan lave med <em>AppleScript</em>, som forhåbentlig vil få Jer igang med selv at lege med sproget.</p>
+
+<h2>Hvad er AppleScript</h2>
+
+<p>Men hvad er <em>AppleScript</em>, og hvorfor er det værd at vide noget om som Macbruger? <em>AppleScript</em> er et simpelt engelsklignende scriptingsprog, der er indbygget i Mac OS X. Sproget har en dyb integration til hele operativsystemet, så det kan bruges både til at automatisere rigtigt mange OS specifikke handlinger, men også handlinger knyttet til de installerede programmer.
+Denne dybe integration kommer fra brugen af såkaldte <em>AppleEvents</em>. Dette er en grundlæggende kommunikationsform for Mac applikationer, der har været brugt helt tilbage fra før Mac OS X tiden. Disse simple events bliver brugt hele vejen igennem OS X arkitekturen både til interne kommandoer såsom: Åben fil, Luk Finder vindue, klik på dette menupunkt osv. osv. Men også til kommunikation fra OS&#39;et til de installerede programmer. Og mange af de applikationer man har installeret tilbyder faktisk et lille library af operationer man kan bruge direkte fra sit <em>AppleScript</em> til at udføre opgaver i programmet.</p>
+
+<h2>AppleScript editor</h2>
+
+<p>Den nemmeste måde at komme igang med <em>AppleScripts</em> er via den indbyggede editor, <em>AppleScript Editor</em>.
+<img src="/blog-images/applescript1/1.png" alt="Editor">
+Editoren er opdelt i to felter. I det øverste felt skal man skrive sin kode, og i det nederste felt kan man se resultatet af den kørte kode.</p>
+
+<h2>Kompileret eller fortolket</h2>
+
+<p>Nu vil jeg ikke komme ud i en lang snak omkring kompilerede og fortolkede sprog - men mange vil nok falde over &quot;Compile&quot; knappen i editoren. Dette betyder ikke at <em>AppleScript</em> i den traditionelle C/Java forstand er et kompileret sprog. Der sker godtnok en kompilering af koden over til noget lidt nærmere maskinsprog. Men dette sker Run-time. Så det &quot;compile&quot; knappen hjælper os med er nærmere en parsning og hjælp til at validere vores syntaks. Det vil sige, den fortæller os ikke om scriptet laver det vi forventer, men mere om vi har lavet nogle slå-fejl eller har brugt forkerte navne på operationer.</p>
+
+<h2>Det første <em>AppleScript</em></h2>
+
+<p>Men lad os komme igang med at skrive det første <em>AppleScript</em>. Dette vil ikke være en introduktion til programmering, og det er som sagt heller ikke nødvendigt.</p>
+
+<p>Men her er vores første script:
+<script src="https://gist.github.com/mortensieker/29cbada42dc9be918f45.js"> </script>
+Som sagt så har sproget en syntaks, der minder rigtigt meget om det engelske sprog. </p>
+
+<p>Så det vi i denne type script gør er <code>tell application &quot;Application name&quot;</code>. Her fortæller vi at vi vil have applikation X til at gøre noget.
+Denne blok afsluttes med en <code>end tell</code> for at fortælle compileren at nu er vi færdig med at udføre det vi vil have applikation X til at gøre.
+Applikationsnavnet er det navn applikationen har i Jeres Application folder. Dette navn skal altid sættes i citationstegn.</p>
+
+<p>Indeni sådan vores &quot;tell blok&quot; fortæller vi så hvad vi vil have den angivne application til at lave. Dette foregår også via vores pseudo engelsklignende sprog. I dette tilfælde <code>make new Finder window</code>.</p>
+
+<h2>Library</h2>
+
+<p>Ligesom med andre programmeringssprog så er der naturligvis også et <a href="http://da.wikipedia.org/wiki/Application_programming_interface">API</a> hvor man kan finde mere information om hvilke programmer, der tilbyder <em>AppleScript</em> integration og hvilke metoder de udstiller. Dette er det såkaldte &quot;Library&quot;. 
+<img src="/blog-images/applescript1/2.png" alt="Library"></p>
+
+<p>Når du åbner <em>Library</em> første gang så er det ikke alle apps du kan finde derinde. Men via den lille &quot;plus&quot; knap i øverste venstre side kan du tilføje de apps du gerne vil interagere med. Hvis du dobbeltklikker på den app du gerne vil kode op imod, så kommer der en ny dialog frem hvor man kan se alle de kommandoer man kan kalde i applikationen.
+<img src="/blog-images/applescript1/3.png" alt="API"></p>
+
+<h2>Thats it...</h2>
+
+<p>Mere skal der sådanset ikke til, og du er nu klar til selv at gå ud og lave din egne <em>AppleScripts</em>. Det virker måske meget simpelt lige nu, og det er hele hemmeligheden... Det er det også... </p>
+
+<p>Selv med simple scripts kan man lave utroligt meget.
+Noget der også gør sproget utroligt brugbart er at rigtigt rigtigt mange apps tilbyder at køre <em>Applescripts</em> som en del af deres workflows.
+Heriblandt apps såsom <strong><a href="http://www.alfredapp.com/">Alfred</a></strong>, <strong><a href="http://infiniteloop.dk/2014/01/17/hazel/">Hazel</a></strong>, <strong><a href="https://smilesoftware.com/TextExpander/index.html">Text Expander</a></strong> osv. osv.</p>
+
+<p>Et par eksempler på scripts jeg bruger næsten hver dag er:</p>
+
+<ul>
+<li>Når jeg skal til at optage et podcast så vil jeg gerne have så lidt kørende i baggrunden som overhovedet muligt. Jeg har derfor lavet et lille <a href="http://www.alfredapp.com/">Alfred</a> workflow som i bund og grund bare kører en mængde små <em>AppleScripts</em>, der lukker alle de applikationer jeg ved tager mange ressourcer, samt pauser alle mine backup programmer.
+På samme måde har jeg et lille workflow, der kører scripts der starter alt op igen når jeg er færdig.</li>
+<li>Jeg har lavet et script til at interagere med <a href="http://www.mamp.info/en/">MAMP</a>: Start, stop osv. osv.</li>
+<li>Jeg har scripts, der hjælper mig med at deaktivere og aktivere de ting jeg vil have kørende når jeg tager min laptop med mig og reelt ikke vil have den til at fungere som en &quot;desktop&quot; computer længere.</li>
+</ul>
+
+<p>Det korte af det lange er. Der er uanede muligheder og det er super super nemt at komme igang.</p>
+
+<p>Rigtig god fornøjelse.</p>
+
+        
+    </article>
+    
+</section>
+
+      <!--li><span>03 Jun 2014</span> &raquo; <a href="/2014/06/03/applescript-basics.html">Applescript - The basics</a></li-->
+    
+        <section class="post">
+    <h1><a href="/2014/06/01/jee7-rest.html">Java EE7 og RESTful services  &#xffeb;</a></h1>
+     
+     <h3 class="postdate">
+        <i class="fa fa-tag"></i>
+        
+            <a href="/emne/jee.html" title="JEE">JEE</a> /
+        
+            <a href="/emne/rest.html" title="REST">REST</a> /
+        
+            <a href="/emne/cdi.html" title="CDI">CDI</a> /
+        
+        01&nbsp;Juni&nbsp;2014</h3>
+     
+    <article class="markdown">
+        
+            <p>I dette blogindlæg vil jeg vise hvor nemt det er at komme igang med JEE7 og REST. Det vil ikke være en dybdegående gennemgang af Java og RESTful services, men bare lige nok til at komme.</p>
+
+<p>Start med at lave et nyt <em><a href="http://maven.apache.org/">maven</a></em> projekt udfra denne archetype:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">mvn archetype:generate -Dfilter=com.airhacks:javaee7-essentials-archetype
+</code></pre></div>
+<p>Dette giver dig et helt barebone Java EE 7 maven projekt.</p>
+
+<p>Det første du skal gøre er at oprette din CDI deployment descriptor <code>beans.xml</code> i din <code>webapp/WEB-INF</code> folder.
+Du kan enten få dit IDE til at autogenerere den for dig, eller oprette den manuelt med følgende indhold</p>
+<div class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>  
+<span class="nt">&lt;beans</span> <span class="na">xmlns=</span><span class="s">&quot;http://xmlns.jcp.org/xml/ns/javaee&quot;</span> 
+<span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> 
+<span class="na">xsi:schemaLocation=</span><span class="s">&quot;http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd&quot;</span>
+<span class="na">bean-discovery-mode=</span><span class="s">&quot;all&quot;</span><span class="nt">&gt;&lt;/beans&gt;</span>
+</code></pre></div>
+<p>Det vigtige i JEE7 modsat tidligere udgaver er <code>discovery-mode</code>. Hvis du får dit IDE til at autogenerere din beans.xml, så vil denne pr. default stå til <code>annotated</code>. Dette skal ændres til <code>all</code> da du derved fortæller CDI at den automatisk skal finde alle bønner i din applikation.</p>
+
+<p>Det næste du skal lave, iden dette er en &quot;no-web.xml&quot; udgave af en REST service, er din JAXRS configuration. Opret en ny klasse med følgende indhold:</p>
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="nd">@ApplicationPath</span><span class="o">(</span><span class="s">&quot;resources&quot;</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">JAXRSConfiguration</span> <span class="kd">extends</span> <span class="n">Application</span><span class="o">{</span>
+
+<span class="o">}</span>
+</code></pre></div>
+<p>Dette svarer til det servlet-mapping URL pattern man plejer at anvende i web.xml.</p>
+
+<p>Det næste der skal laves er din REST resource, så lav en ny simpel <a href="http://en.wikipedia.org/wiki/Plain_Old_Java_Object">POJO</a> Java klasse og annoter den med <code>@Path</code></p>
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="nd">@Path</span><span class="o">(</span><span class="s">&quot;entries&quot;</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">EntriesResource</span> <span class="o">{</span>
+
+    <span class="nd">@Inject</span>
+    <span class="n">EntryService</span> <span class="n">es</span><span class="o">;</span>
+
+    <span class="nd">@GET</span>  
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">entries</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">es</span><span class="o">.</span><span class="na">getAll</span><span class="o">();</span>    
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+<p>Dette vil udstille din EntriesResource på en URL lignende dette:  <strong>http://localhost/resources/blogentries</strong>. Denne resource kan nu eksponere alle de de velkendte HTTP REST request metoder (GET, POST, DELETE, PUT, OPTIONS).</p>
+
+<p>Dette gøres ved at lave en ny metode i din klasse og annotere den med den ønskede HTTP request metode. Ligesom i eksemplet ovenfor.</p>
+
+<p>Som du kan se i ovenstående kode så har jeg en reference til noget kaldet en <code>EntriesService</code>. Dette er vores &quot;protokol neutrale&quot; tilgang til vores forretningslogik. 
+Får du senere lyst til at lave en SOAP eksponering af denne service, så kan dette gøres relativt ukompliceret og smertefrit ved at tilføje en ny <code>EntriesSOAPStinks</code> klasse, der hånderer eksponeringen på samme måde som vores EntriesResource.  Og vi undgår herved duplikering af forretningslogik.</p>
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="nd">@Stateless</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">EntryService</span> <span class="o">{</span>    
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getAll</span><span class="o">()</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="s">&quot;Affirmative, Dave. I read you.&quot;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div>
+<p>Vi har nu lavet en lille <em><a href="http://en.wikipedia.org/wiki/Session_Beans">stateless</a></em> java bønne, der indeholder vores forretningslogik til at finde frem til det data vores EntriesResource ønsker at returnere.
+Dette kan naturligvis udbygges med JPA for at tilgå og skrive data til en database, men det kommer i et senere indlæg.</p>
+
+<p>Dette er i bund og grund alt, der skal til for at lave en RESTful webservice i JEE7. Jeg håber dette var nok til at give blod på tanden og selv komme igang med at lave REST services i JEE7.</p>
+
+<p>Et kørende eksempel kan hentes på min <a href="https://github.com/mortensieker/findpakkenRESTServer">GitHub</a> side.</p>
+
+        
+    </article>
+    
+</section>
+
+      <!--li><span>01 Jun 2014</span> &raquo; <a href="/2014/06/01/jee7-rest.html">Java EE7 og RESTful services</a></li-->
+    
+        <section class="post">
+    <h1><a href="/2014/06/01/velkommen-tilbage.html">Velkommen tilbage  &#xffeb;</a></h1>
+     
+     <h3 class="postdate">
+        <i class="fa fa-tag"></i>
+        
+        01&nbsp;Juni&nbsp;2014</h3>
+     
+    <article class="markdown">
+        
+            <p>Efter en kort pause er infiniteloop tilbage.<br>
+Siden har været igennem en lille migreringsproces og er nu at finde på <a href="https://pages.github.com/">Github pages</a>.</p>
+
+<p>Jeg roder stadig lidt rundt med opsætningen heroppe, men er i det store hele rigtigt glad for flytningen. Siden bygger stadig på <a href="">Jekyll</a> og det lækre ved at bruge Github Pages er at de selv tager ens source og kompilerer den om til HTML. Noget jeg selv stod for før.</p>
+
+<p>Som I sikkert også kan se så er de gamle artikler væk. Dette er de naturligvis ikke for altid. Men jeg løber dem lige igennem for at se hvilke der stadig er aktuelle og for dem derefter tilpasset sidens nye layoutformat.</p>
+
+        
+    </article>
+    
+</section>
+
+      <!--li><span>01 Jun 2014</span> &raquo; <a href="/2014/06/01/velkommen-tilbage.html">Velkommen tilbage</a></li-->
+    
+</div>
+<div class="pagination">
+  <ul class="pager">
+  
+    
+      <li class="next"><a href="/page2">Nyere →</a></li>
+    
+  
+  
+    <li class="previous disabled"><a href="#">← Ældre</a></li>
+  
+  </ul>
+</div>
+            </div>
+        </div>
+        
+        <script src="/js/loop.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-3809485-8', 'infiniteloop.dk');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

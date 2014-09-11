@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>
+        
+            PHP og RESTful services | Infiniteloop.dk
+        
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/cosmo/bootstrap.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'> 
+        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="sidebar" class="text-center">
+            <h2><strong>Infinite</strong>Loop</h2>
+<h6>af morten sieker</h6>
+<h5>En weblog om teknologi, softwareudvikling og hverdagens små nørderier</h5>
+<a href="#" class="menutoggle"><i class="fa fa-bars"></i></a>
+<nav id="sidemenu">
+    <ul class="list-unstyled">
+        <li><a href="/">Hjem</a></li>
+        <li><a href="/arkiv">Arkiv</a></li>
+        <li><a href="/soeg">Søg</a></li>
+        <li><a href="/om">Om</a></li>
+        <li><a href="http://infiniteloop.dk/rss.xml" target="_blank">RSS <i class="icon-rss"></i></a></li>
+    </ul>
+</nav>
+<!--div id="sidesocials" class="row">
+    <div class="col-xs-12" style="margin-bottom: 5px;">
+        KONTAKT
+    </div>
+    <div class="col-xs-3"></div>
+    <div class="col-xs-3 text-center">
+        <a href="http://twitter.com/mortensieker" target="_blank"><i class="icon-twitter"></i></a>
+    </div>
+    <div class=" col-xs-3 text-center">
+        <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#111;&#114;&#116;&#101;&#110;&#64;&#105;&#110;&#102;&#105;&#110;&#105;&#116;&#101;&#108;&#111;&#111;&#112;&#46;&#100;&#107;'>
+        <i class="icon-envelope"></i></a>
+    </div>
+    <div class="col-xs-3"></div>
+</div-->
+        </div>
+        <div id="container">
+            <div id="stage">
+                
+<section class="post">
+    <h1><a href="/2014/06/06/php-rest.html">PHP og RESTful services  &#xffeb;</a></h1>
+     
+     <h3 class="postdate">
+        <i class="fa fa-tag"></i>
+        
+            <a href="/emne/php.html" title="PHP">PHP</a> /
+        
+            <a href="/emne/rest.html" title="REST">REST</a> /
+        
+        06&nbsp;Juni&nbsp;2014</h3>
+     
+    <article class="markdown">
+        
+            <p>I samme stil som mit indlæg med /2014/06/01/jee7-rest.html så vil jeg her vise hvor nemt det er at komme igang med PHP og RESTful services.</p>
+
+<p>I modsætning til det forrige indlæg vil jeg denne gang ikke skrive det selv. Jeg vil derimod gøre brug af et lille framework kaldet <strong><a href="http://www.slimframework.com/">Slim</a></strong>.  </p>
+
+<p>Det vil ikke være noget problem at skrive det hele selv, det kræver bare alt alt for meget kode - og indeholder så mange elementer man selv skal tage hånd om, at det hurtigt bliver uoverskueligt. (Tro mig, jeg har skrevet mange REST services i PHP før jeg fandt Slim).</p>
+
+<p>Jeg er også stor fortaler for at bruge 3-parts frameworks. Og i særdeleshed light-weight frameworks som <em>Slim</em>, der ikke prøver på at være noget stort og redde hele verden. Slim gør én ting, og det gør det godt.</p>
+
+<p>For et par år siden kom der et yderligere lille framework til PHP jeg også vil gøre brug af her, nemlig <a href="https://getcomposer.org/">Composer</a>. Composer er et simpelt &quot;dependency management&quot; tool til PHP meget lig det man kan lave i <em>maven</em> og <em>gradle</em> til Java apps.
+En dybdegående gennemgang af <em>Composer</em> må komme en anden god gang, så indtil videre går jeg udfra at det er installeret og på din path.</p>
+
+<p>For at få Composer til at hente nyeste udgave af Slim ind i dit projekt skal du tilføje følgende til din <code>composer.json</code></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&quot;require&quot;: {
+        &quot;slim/slim&quot;: &quot;2.*&quot;
+}
+</code></pre></div>
+<p>Og derefter køre <code>composer install</code>.</p>
+
+<p>Du har nu hentet Slim frameworket ned i en folder kaldet &quot;Vendor&quot; i roden på din applikation, og har nu alt hvad der skal til for at lave en ultra letvægts RESTful service i PHP.</p>
+
+<p>Start med at lave en <code>index.php</code> fil med følgende indhold
+<script src="https://gist.github.com/mortensieker/a28eddb37db3c12e2870.js"> </script></p>
+
+<p>Linie 2 er Slims automatiske fil/afhængigheds-loader. Det er ikke noget du skal tænke videre over. Men det den gør er at hver gang der refereres til en fil i Slim frameworket, som ikke er inkluderet så finder den filen og gør det for dig.</p>
+
+<p>Linie 4 starter en ny Slim app, og her er måske noget nyt alt efter hvilken version af PHP du plejer at køre. I PHP 5.3 blev der indfør namespaces, som man kender fra sprog såsom Java, C# osv. osv. Det man kan undre sig lidt over er måden hvorpå det er implementeret. Nemlig som \Pakke\ istedet for en dot-notation. Oh well, det er ikke den eneste ting ved PHP der er underlig.</p>
+
+<p>Fra linie 6 og frem kommer vi til det sjove. Linie 6-8 er i bund og grund en REST resource i sin simpleste form. Man vælger request metoden, her en GET. Angiver siten og input parametre og til slut angiver det kode der skal eksekveres i en closure / anonym metode.</p>
+
+<p>Linie 10-12 er det samme bare med et POST kald.</p>
+
+<p>Linie 14 starter Slim applikationen og den lytter nu efter input.</p>
+
+<p>En sidste ting der mangler er en <code>.htaccess</code> fil der kan hjælpe dig med at route alle kald hen til din <code>index.php</code> fil.
+Så lav en ny .htaccess fil i roden på din applikation og giv den følgende indhold:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
+</code></pre></div>
+<p>Dette er i bund og grund alt der skal til for at lave en RESTful service i PHP. Der ligger selvfølgelig en masse kode inde i Slim frameworket, men det skal vi heldigvis ikke tænke over.</p>
+
+<p>Servicen kan nu rammes på <strong>http://localhost/dit-resource-navn/</strong></p>
+
+<p>Slim indeholder rigtigt mange fede muligheder for at lave gode RESTful services så giv deres dokumentation et kig før du går igang.</p>
+
+<p>En kørende udgave af ovenstående kode kan finde på <a href="https://github.com/mortensieker/infiniteloop-samples/tree/master/php-rest">GitHub</a></p>
+
+<p>Og som altid, er der spørgsmål så fang mig på <a href="http://twitter.com/mortensieker">Twitter</a></p>
+
+        
+    </article>
+    
+</section>
+
+            </div>
+        </div>
+        
+        <script src="/js/loop.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-3809485-8', 'infiniteloop.dk');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

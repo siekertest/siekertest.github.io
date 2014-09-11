@@ -1,0 +1,194 @@
+/** GENERIC **/
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #007fff;
+}
+
+#container {
+    position: relative;
+    max-width: 1060px;
+}
+
+#stage {
+    margin-left: 260px;
+    width: auto;
+    padding: 20px 50px;
+}
+
+/** SIDEBAR **/
+#sidebar {
+    z-index: 2000;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 260px;
+    background: #000;
+    overflow: hidden;
+    color: #FFF;
+}
+#sidebar a {
+    color: #FFF;
+    display: block;
+    padding: 10px;
+    text-transform: uppercase;
+}
+#sidebar ul li:first-of-type {
+    border-top: 1px solid #333; 
+}
+#sidebar ul li a {
+    font-weight: 200;   
+}
+#sidebar ul li {
+    border-bottom: 1px solid #333;
+}
+#sidebar ul li a:hover {
+    color: #000;
+    background-color: #FFF;
+}
+#sidebar h2 {
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 21px;
+}
+#sidebar h5 {
+    color: #999;
+    font-size: 14px;
+    padding: 20px;
+    margin: 20px 0;
+}
+#sidebar h6 {
+    font-size: 11px;
+}
+#sidebar .menutoggle {
+  display: none;
+}
+
+/** POSTS **/
+.post {
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+.post > h1 {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.post > h1 a {
+  color: #333;
+}
+.post h1 a:hover {
+  color: #007fff;
+}
+
+.post h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.post h3 {
+    font-size: 20px;   
+    font-weight: 400;
+}
+.post h4 {
+    font-size: 18px;  
+    font-weight: 400; 
+}
+.post h5 {
+    font-size: 16px; 
+    font-style: italic;  
+    font-weight: 400;
+}
+.post .postdate {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400 !important;
+    color: #777;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.post img {
+    min-width: 50%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+
+}
+/** ARKIV **/
+table.archive {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+table.archive td.year {
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+table.archive:first-child tr:first-child td:first-child {
+  padding-top: 0;
+}
+
+table.archive td.date {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+table.archive td a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.pagination {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    #sidebar {
+        width: 100%;
+        position: relative;
+        margin: 0;
+    }
+    #sidebar .menutoggle {
+        display: block;
+    }
+    #sidebar #sidemenu {
+        display: none;
+    }
+    #stage {
+        position: relative;
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+@media (min-width: 767px) {
+    #sidebar #sidemenu{
+        display: block !important;
+    }
+}
+
+blockquote {
+    border-left: 2px solid #007fff;
+    font-size: 14px;
+}
+
+.soeg_resultat h4 {
+    line-height: 25px;
+}
+
+.btn {
+    padding: 11px 18px;
+}

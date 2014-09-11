@@ -1,0 +1,17 @@
+name: infiniteloop.dk
+markdown: redcarpet
+permalink: /:year/:month/:day/:title.html
+highlights: true
+paginate: 5
+description: En weblog om teknologi softwareudvikling og hverdagens små nørderier
+url: http://infiniteloop.dk
+timezone: Europe/Copenhagen
+tag_page_layout: tag
+tag_page_dir: emne
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

@@ -1,0 +1,28 @@
+require "rubygems"
+
+desc "Infiniteloop.dk build script"
+task :build do
+    puts "Building infiniteloop"
+    system "jekyll build"
+end
+
+task :copy do
+    puts "Copying files"
+    sh "rsync -rv --delete --exclude=Rakefile --exclude=Gemfile _site/* ../../Github/mortensieker.github.io/"
+end
+
+task :deploygithub do
+    cd "../../Github/mortensieker.github.io" do
+        sh "git add -A"
+        begin
+        sh "git commit -a -m InfiniteLoop"
+        sh "git push origin master"
+        rescue
+        sh "git push origin master"
+        end
+    end
+end
+
+task :all => [:build, :copy, :deploygithub] do
+    puts "Doing it all"
+end

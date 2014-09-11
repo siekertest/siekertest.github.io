@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>infiniteloop.dk</title>
+        <description>En weblog om teknologi softwareudvikling og hverdagens små nørderier</description>      
+        <link>http://infiniteloop.dk</link>
+
+        
+            <item>
+                <title>iPhone bug kan lede til ufrivillige opkald</title>
+                <description>&lt;p&gt;En sikkerhedsbrist fundet i iOS tillader 3-part apps, at ringe op til et telefonnummer uden at brugeren skal godkende det først.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Apple has mentioned in its RFC that there is a feature in iOS called ‘tel’, which implements the functionality that when a user receives a phone number in webpage, iOS displays alerts asking user to confirm the action (to call or not to call). However, when the user receives a phone number in a native app, it doesn’t ask for confirmation instead it directly dials the number and calls right away as the user taps the phone number received.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Dette kan også bruges til at starte et Facetime opkald uden brugeren er opmærksom på dette, hvilket giver modtageren af opkaldet mulighed for at fange et hurtigt screenshot eller en video af hvad du går og foretager dig lige nu.&lt;/p&gt;
+
+&lt;p&gt;Læs mere via nedenstående link.&lt;/p&gt;
+
+&lt;p&gt;Kilde: &lt;a href=&quot;http://techfrag.com/2014/08/25/feature-iphone-can-pave-way-hackers/&quot;&gt;Techfrag.com&lt;/a&gt;&lt;/p&gt;
+</description>
+                <pubDate>Tue, 26 Aug 2014 07:50:00 +0200</pubDate>
+                <link>http://infiniteloop.dk/2014/08/26/iphone-security-flaw.html</link>
+                <guid isPermaLink="true">http://infiniteloop.dk/2014/08/26/iphone-security-flaw.html</guid>
+            </item>
+        
+            <item>
+                <title>1 års gratis Lastpass Premium</title>
+                <description>&lt;p&gt;Du har sikkert hørt det en million gange allerede, men det er rigtigt vigtigt at have styr på sine password.
+Og ikke bare at have styr på dem, men at bruge forskellige passwords til dine online konti, og dernæst at skifte dem ofte.
+&lt;img src=&quot;https://lastpass.com/media/pressroom/LastPassLogo493x60.png&quot; alt=&quot;Lastpass&quot;&gt;
+Et af de bedste tools til at hjælpe dig med dette er &lt;a href=&quot;https://lastpass.com/&quot;&gt;Lastpass&lt;/a&gt;, og du kan lige nu få et år gratis ved at benytte nedenstående link.&lt;/p&gt;
+
+&lt;p&gt;Kilde: &lt;a href=&quot;https://www.appsumo.com/lastpass-deal/buy/&quot;&gt;AppSumo&lt;/a&gt;&lt;/p&gt;
+</description>
+                <pubDate>Mon, 25 Aug 2014 21:50:00 +0200</pubDate>
+                <link>http://infiniteloop.dk/2014/08/25/lastpass.html</link>
+                <guid isPermaLink="true">http://infiniteloop.dk/2014/08/25/lastpass.html</guid>
+            </item>
+        
+            <item>
+                <title>Google Play Store tilbagebetaling</title>
+                <description>&lt;p&gt;Indenfor den seneste uges tid har Google Play Store ændret deres politik mht. tilbagebetaling af køb i butikken.&lt;br&gt;
+Hidtil har tidsrammen for tilbagebetaling være 15 minutter. Men det ser nu, til køberens fordel, ud til at være ændret til 2 timer.&lt;/p&gt;
+
+&lt;p&gt;Kilde: &lt;a href=&quot;http://lifehacker.com/google-play-store-now-allows-refunds-within-two-hours-1625201414&quot;&gt;LifeHacker&lt;/a&gt;&lt;/p&gt;
+</description>
+                <pubDate>Mon, 25 Aug 2014 07:30:00 +0200</pubDate>
+                <link>http://infiniteloop.dk/2014/08/25/google-play-refunds.html</link>
+                <guid isPermaLink="true">http://infiniteloop.dk/2014/08/25/google-play-refunds.html</guid>
+            </item>
+        
+            <item>
+                <title>Hazel</title>
+                <description>&lt;p&gt;Dette indlæg er fra min gamle blog, men det gør det ikke mindre relevant. Det er en anbefaling af en applikation, der er intet mindre end genial. Og en applikation, der er et &amp;quot;must have&amp;quot; for produktivitetsnørder som mig selv.&lt;br&gt;
+&lt;strong&gt;&lt;a href=&quot;http://www.noodlesoft.com/hazel.php&quot;&gt;Hazel&lt;/a&gt;&lt;/strong&gt; er i alt sin enkelthed en app, der gør at man kan knytte en mængde &amp;quot;regler&amp;quot; eller &amp;quot;actions&amp;quot; til en folder. Det lyder måske dumt, men det er sindsygt brugbart.  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hazel&lt;/strong&gt; er simpelt opbygget og det er rigtigt nemt at opsætter nye regler.
+I hovedvinduet kan man i venstre side kan se de foldere hvortil man har knyttet regler. I højre side kan man se hvilke regler der er tilknyttet den enkelte folder.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog-images/hazel/1.png&quot; alt=&quot;Hazel&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Opsætningen af reglerne er via en simpel form, hvor man via en masse foruddefinerede elementer kan fortælle hvad og hvornår noget skal ske.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog-images/hazel/2.png&quot; alt=&quot;Regel&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Og det er sådanset det hele.&lt;br&gt;
+Man har som en ekstra lille ting også mulighed for at få &lt;strong&gt;Hazel&lt;/strong&gt; til at tømme papirkurven.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog-images/hazel/3.png&quot; alt=&quot;Trash&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Her er en par simple eksempler på brug af &lt;strong&gt;Hazel&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;h3&gt;Dropbox og Kamera uploads fra mobil&lt;/h3&gt;
+
+&lt;p&gt;Jeg er nok ikke den eneste der på mobiltelefonen har automatisk upload af billeder til Dropbox slået til. 
+Dette er i sig selv en rigtig lækker feature, og hvis man har &lt;em&gt;Dropbox&lt;/em&gt; installeret på sin Mac så bliver disse billeder automatisk hentet ned dertil næste gang man tænder den.&lt;br&gt;
+Noget af det jeg gør løbende er at kopiere disse billeder væk fra Dropbox folderen (da de tager plads) og over i en folder hvorfra der bliver taget backup til skyen (Ved brug af services som &lt;a href=&quot;http://www.code42.com/crashplan/&quot;&gt;Crashplan&lt;/a&gt; eller &lt;a href=&quot;http://www.backblaze.com/&quot;&gt;BackBlaze&lt;/a&gt;).&lt;br&gt;
+Problemet er at jeg skal gøre dette manuelt.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Løsningen til dette problem&lt;/em&gt;&lt;br&gt;
+Jeg opretter en overvågning på min Dropbox/Camera Uploads mappe.&lt;br&gt;
+Jeg laver en regel, der siger at hver gang der kommer nye filer heri så flyttes de automatisk over i min backup-folder i en folderstruktur der svarer til det år og den måned billedet er taget.&lt;br&gt;
+Og wupti så skal jeg aldrig tænke på det mere. De bliver nu automatisk slettet fra dropbox, og de er nu inde i en folder der bliver taget backup af.&lt;/p&gt;
+
+&lt;p&gt;Ovenstående er også en perfekt måde at sikre sig backup af sine billeder fra &lt;em&gt;Apples fotostream&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Optagelse af podcast og backup af optagelse&lt;/h3&gt;
+
+&lt;p&gt;Et par gange om måneden optager jeg et podcast. Efter hver optagelse kopierer jeg de rå filer over på min NAS for at være sikker på at have en backup hvis nu computeren skulle gå ned inden jeg når at få dem redigeret færdig. Dette er ikke et stort problem, men som alt muligt andet så tager det tid.  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Løsning på dette problem&lt;/em&gt;
+Lav en overvågning på den folder hvor mit optageprogram (Her: Audio Hijack Pro) smider de rå filer. Når der så kommer en ny fil i denne mappe så kopieres filerne automatisk over til en folder på min NAS.&lt;br&gt;
+Det er simpelt men super brugbart.&lt;/p&gt;
+
+&lt;h3&gt;OSX Mavericks &amp;amp; Tags&lt;/h3&gt;
+
+&lt;p&gt;Er du en af dem der bruger &lt;em&gt;Tags&lt;/em&gt; så kan &lt;strong&gt;Hazel&lt;/strong&gt; faktisk også hjælpe dig med det, da du kan opsætte regler der automatisk tagger dine filer. F.eks. kan de føromtalte billeder fra mobilen også automatisk blive tagget med &amp;quot;billeder&amp;quot; &amp;amp; &amp;quot;mobil&amp;quot;.&lt;/p&gt;
+
+&lt;h3&gt;Hold styr på din Downloads folder&lt;/h3&gt;
+
+&lt;p&gt;En mappe der hurtigt bliver fyldt op med en masse filer er &lt;em&gt;Downloads&lt;/em&gt; folderen. For at undgå dette så har jeg lavet en lille regel, der sletter alt der ikke har været modificeret indenfor den seneste uge.&lt;/p&gt;
+
+&lt;p&gt;Dette er bare et par yderst simple eksempler. Man kan lave meget meget mere. Blandt andet få regler til at eksekvere Applescripts osv. osv. Det er et simpelt og fedt lille tool at lege med - og jeg kan kun anbefale at man køber det. Ja det koster desværre lidt klejner ($28), men jeg synes det er det hele værd.  &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hazel&lt;/strong&gt; kan købes &lt;a href=&quot;http://www.noodlesoft.com/hazel.php&quot;&gt;her&lt;/a&gt;&lt;/p&gt;
+</description>
+                <pubDate>Wed, 23 Jul 2014 13:30:00 +0200</pubDate>
+                <link>http://infiniteloop.dk/2014/07/23/hazel.html</link>
+                <guid isPermaLink="true">http://infiniteloop.dk/2014/07/23/hazel.html</guid>
+            </item>
+        
+            <item>
+                <title>Lego Batman Tumbler</title>
+                <description>&lt;p&gt;Så er Lego igen på banen med godt nyt til alle Batman-fans. Det er lige kommet frem at de til september sender intet mindre end Batmans Tumbler fra Christopher Nolan filmene på gaden.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://oyster.ignimgs.com/wordpress/stg.ign.com/2014/07/1-346e6d9552.jpg&quot; alt=&quot;Tumbler&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Sættet består af intet mindre end 1896 stykker Lego, hvilket er over 800 stykker mere end den forrige Batmobil fra 2006.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://img3.wikia.nocookie.net/__cb20100228163119/lego/images/b/b0/7784_The_Batmobile-_Ultimate_Collector%27s_Edition.jpg&quot; alt=&quot;Batmobile&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Prisen er desværre også derefter idet den kommer på gaden til $199 i USA, hvilket nok betyder 1500-2000kr herhjemme.&lt;/p&gt;
+
+&lt;p&gt;Sættet ser dog intet mindre end fantastisk ud, så jeg vil begynde min opsparing med det samme :)&lt;/p&gt;
+
+&lt;p&gt;Kilde: &lt;a href=&quot;http://www.ign.com/articles/2014/07/21/the-ultimate-batman-tumbler-lego-set&quot;&gt;IGN&lt;/a&gt;&lt;/p&gt;
+</description>
+                <pubDate>Mon, 21 Jul 2014 21:30:00 +0200</pubDate>
+                <link>http://infiniteloop.dk/2014/07/21/lego-tumbler.html</link>
+                <guid isPermaLink="true">http://infiniteloop.dk/2014/07/21/lego-tumbler.html</guid>
+            </item>
+        
+            <item>
+                <title>Monument Valley rammer 1mil. downloads</title>
+                <description>&lt;p&gt;Spillet Monument Valley til iPad runder nu de 1mil. solgte eksemplarer, og det må siges at være velfortjent for det er intet mindre en fantastisk.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://designcollector.net/files/monument-valley-3.jpg&quot; alt=&quot;Monument Valley&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Spillet er tydeligvis inspireret af &lt;strong&gt;M. C. Eschers&lt;/strong&gt; billeder såsom dette af &lt;em&gt;Waterfall&lt;/em&gt;. Det er ikke ret langt men til gengæld rigtigt sjovt hele vejen igennem. Det er et spil for hele familien og jeg kan sige at min knægt på 3-4 år på alle måder er solgt. De første baner kan han klare uden hjælp - resten tager vi sammen. Hvilket i sig selv også er det hele værd.  &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload.wikimedia.org/wikipedia/en/e/e8/Escher_Waterfall.jpg&quot; alt=&quot;Waterfall&quot;&gt;  &lt;/p&gt;
+
+&lt;p&gt;Har du endnu ikke prøvet spillet så er det stadig på tilbud til 13kr på &lt;a href=&quot;https://itunes.apple.com/dk/app/monument-valley/id728293409?mt=8&amp;amp;uo=4&amp;amp;at=10lJNn&quot;&gt;App Store&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Kilde: &lt;a href=&quot;http://techcrunch.com/2014/07/18/monument-valley-million/&quot;&gt;Techcrunch&lt;/a&gt;&lt;/p&gt;
+</description>
+                <pubDate>Sat, 19 Jul 2014 09:30:00 +0200</pubDate>
+                <link>http://infiniteloop.dk/2014/07/19/monument-valley.html</link>
+                <guid isPermaLink="true">http://infiniteloop.dk/2014/07/19/monument-valley.html</guid>
+            </item>
+        
+            <item>
+                <title>Ingen custom skins til Android Wear</title>
+                <description>&lt;p&gt;Efter lang tids undren er det endelig kommet frem at det &lt;strong&gt;ikke&lt;/strong&gt; bliver muligt at lave custom skins til første udgave af Android Wear. Dog med et API klar til senere på året.
+&lt;a href=&quot;https://plus.google.com/+WaynePiekarski/posts/2bzJJxG2CAX&quot;&gt;Wayne Piekarski&lt;/a&gt;, senior developer advocate fra Google begrunder det med:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Custom watch faces are activities running inside another process. However, they have some special considerations due to interactions with the stream and always-on ambient mode--including using a shorter peek card, moving the status indicators for battery and mute, and rendering the faces differently in ambient mode. Right now, without an official API, making a really great watch face currently takes a fair bit of tweaking. &lt;/p&gt;
+
+&lt;p&gt;We are working to make this as simple as possible for you so that it’s easy to make good-looking faces that work well across multiple form factors, conserve battery, and display the user’s card stream nicely. Some of these changes won’t be ready until we migrate Android Wear to the Android L release later this year, but don’t fret: they’re coming!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Netop når det er Android, der gør meget ud af at lade anvenderen tilpasse brugeroplevelsen så er dette et absolut &amp;quot;must&amp;quot;. Det er absolut ikke noget jeg ville forvente af et eventuelt ur fra Apple. Men bestemt fra Android Wear på linie med en Custom Launcher til en telefon.&lt;/p&gt;
+
+&lt;p&gt;Kilde: &lt;a href=&quot;http://arstechnica.com/gadgets/2014/07/android-wear-doesnt-support-watch-face-apps-yet-api-coming-this-year/&quot;&gt;Ars Technica&lt;/a&gt;&lt;/p&gt;
+</description>
+                <pubDate>Fri, 18 Jul 2014 16:00:00 +0200</pubDate>
+                <link>http://infiniteloop.dk/2014/07/18/android-wear.html</link>
+                <guid isPermaLink="true">http://infiniteloop.dk/2014/07/18/android-wear.html</guid>
+            </item>
+        
+            <item>
+                <title>logr - lost in time</title>
+                <description>&lt;p&gt;Efter en lille frustration over ikke at kunne finde den &amp;quot;perfekte&amp;quot; app eller hjemmeside 
+til at holde styr på min arbejdstid startede jeg et lille projekt op på GitHub.&lt;br&gt;
+Projektet hedder &lt;strong&gt;logr&lt;/strong&gt; og er en lille JEE 7 REST service med en AngularJS front-end.  &lt;/p&gt;
+
+&lt;p&gt;Projektet er stadig et &amp;quot;work in progress&amp;quot;, så kom endelig med kommentarer hvis du finder noget, der ser &amp;quot;spændende ud&amp;quot;.&lt;/p&gt;
+
+&lt;p&gt;Applikationen skulle være lige til at hente ned fra GitHub og køre på din egen server.&lt;br&gt;
+Det eneste den kørver er din egen applicationsserver og en datasource.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;logr&lt;/strong&gt; kan findes &lt;a href=&quot;https://github.com/mortensieker/logr&quot;&gt;her&lt;/a&gt;&lt;/p&gt;
+</description>
+                <pubDate>Wed, 18 Jun 2014 08:00:00 +0200</pubDate>
+                <link>http://infiniteloop.dk/2014/06/18/logr-lost-in-time.html</link>
+                <guid isPermaLink="true">http://infiniteloop.dk/2014/06/18/logr-lost-in-time.html</guid>
+            </item>
+        
+            <item>
+                <title>iDimsen fra Apple</title>
+                <description>&lt;p&gt;I de seneste måneder har stortset alle online publikationer haft artikler om Apples næste store satsning, et iWatch. 
+Jeg har aldrig rigtigt kunne se det smarte i et iWatch, og har derfor også været lidt skeptisk for om det er den vej Apple vælger at gå. 
+Og nu vi ikke så noget nyt til WWDC 2014 så synes jeg lige jeg vil dele mine tanker herinde.&lt;/p&gt;
+
+&lt;h2&gt;iWatch?&lt;/h2&gt;
+
+&lt;p&gt;At Apple kommer med noget wearable i år er bestemt ikke det jeg betvivler. I slutningen af sidste år blev det offentliggjort at den tidligere CEO fra Burberry Angela Ahrendts blev den nye Senior VP for Apple Retail. Dette betyder naturligvis ikke, at hun vil få indflydelse på Apples kommende produkter, men dette sammenholdt med de rygter, der har floreret og Apples nylige indkøb af Beats peger i en retning af, at Apple er begyndt at overveje nye tiltag indenfor design og wearable.&lt;/p&gt;
+
+&lt;p&gt;Men hvorfor er det så jeg tvivler på at det bliver et iUr, når vi har set firmaer som Pebble og Samsung lancere deres produkter.&lt;br&gt;
+Det er der mange grunde til og her til efteråret kan det meget vel være, at det viser sig at jeg tager fejl. Men indtil videre forholder jeg mig en smule skeptisk.&lt;/p&gt;
+
+&lt;h3&gt;So last year&lt;/h3&gt;
+
+&lt;p&gt;Jeg har ikke et statistisk grundlag, der kan begrunde dette, men hvor mange af Jer går stadig med et ur?
+Jeg gør det stadig når jeg &amp;quot;husker&amp;quot; at tage det på om morgenen. Men de fleste dage bruger jeg min telefon når jeg skal finde ud af hvad klokken er. Og netop denne trend med at erstatte armbåndsuret med en telefon er noget Apple selv har været med til at skabe. Dette er med til at gøre din telefon til mere end bare endnu en gadget. Med til at gøre den til en essentiel del af din hverdag, din garderobe og dit liv.
+Og en ting jeg er sikker på med den nye iDims er, at hvis Apple kommer ud med noget nyt, så vil det på ingen måde være noget, der tager opmærksomheden væk fra deres guldæble, iPhonen. På samme måde kan man ud fra de seneste mange års lanceringer se, at der er en grund til at Apple holder lidt igen og ikke er &amp;quot;first movers&amp;quot; på mange områder. De vil være sikre på at produktet er gennemarbejdet og gennemtænkt, men også at der er et marked for deres produkter. Så hvis det bliver et ur, så er det ikke bare fordi de ser et lille niche-marked for dette. Men derimod et marked i vækst.&lt;/p&gt;
+
+&lt;h3&gt;Skærmstørrelse og kønsopdelte produkter&lt;/h3&gt;
+
+&lt;p&gt;En ting mange ikke har med i overvejelserne når de snakker om et iWatch er kønsopdelte produkter. 
+Vi har så vidt jeg husker endnu ikke set Apple lave kønsopdelte produkter, men dette må næsten være en nødvendighed hvis de laver et iWatch.
+Der er stor forskel på håndledsstørrelser, og der vil derfor også være et behov for forskellige størrelser henvendt til mænd, kvinder, børn osv.&lt;/p&gt;
+
+&lt;p&gt;Hertil kommer problemet med skærmstørrelsen. De mockups vi har set florere på nettet den seneste tid har haft en størrelse, der kun henvender sig til mænd. Netop for at kunne presse en ekstra stor skærm ned over uret. 
+Et ur med en mindre skærm vil enten have en mindre font størrelse eller alternativt have færre detaljer. Jeg begynder allerede at få koldsved bare ved tanken om at skulle kode op imod så små skærme og derudover at understøtte flere forskellige skærmstørrelser. Men det er nok bare mig.&lt;/p&gt;
+
+&lt;h3&gt;Batteri&lt;/h3&gt;
+
+&lt;p&gt;En anden ting man ikke kan undgå at snakke om, når man er inde omkring skærmstørrelsen, er batteriforbrug. En af de ting, der bruger mest strøm på vores smartphones i dag er skærmen. Skærmen vil naturligvis være mindre på et ur, men det vil pladsen til batteriet også.&lt;/p&gt;
+
+&lt;p&gt;Så kan man overveje om de kunne lave en skærm, der er slukket det meste af tiden og kun tænder når man &amp;quot;drejer hånden&amp;quot;. Dette har jeg prøvet på et løbeur og det virker også 80% af gangene. Men de sidste 20% er nok til at det ikke føles naturligt.&lt;/p&gt;
+
+&lt;p&gt;Det Pebble har gjort med deres ur er at sætte et lille sort/hvid &lt;a href=&quot;http://www.sharpmemorylcd.com/resources/Polarizer-free_Reflective_LCD_White_Paper.pdf&quot;&gt;low power lcd display&lt;/a&gt; i uret, hvilket gør at de kan klemme 5-7 dages strøm ud af det.
+Samsung selv har smidt et Super Amoled display i deres ur, hvilket bruger en del mere størm - og ved normal brug får man cirka 25 timer ud af uret.&lt;/p&gt;
+
+&lt;p&gt;Dette er bare ikke godt nok. Et ur, der skal oplades hver dag er i min bog ikke noget værd. Jeg tror ikke Apple vil gå sort/hvid vejen, så enten skal de have fundet på noget super smart, hvilket heller ikke er utænkeligt, eller også har de en helt anden opfattelse end mig af hvor længe et ur skal holde på en &amp;quot;opladning&amp;quot;.&lt;/p&gt;
+
+&lt;h3&gt;iOS&lt;/h3&gt;
+
+&lt;p&gt;Mængden af detaljer på skærmen er også vigtigt at have in mente. Vil uret køre en fuld udgave af iOS, eller vil Apple lave et styresystem (miniOS), der skal opdateres og holdes ved lige? De har jo naturligvis stadig bastarden AppleTV, der lurer i baggrunden så tjooo hvorfor ikke en ekstra af disse. Hvis de vil have 3parts apps til deres dims så vil det være helt naturligt at gøre det en del af den SDK udviklerne kender i dag - men et fuldt iOS lyder også af overkill. Dog kunne man spekulere om det de arbejder hen imod med den lagdeling og konteks awareness de kom med i iOS 7 peger i denne retning.&lt;/p&gt;
+
+&lt;h3&gt;Prisen&lt;/h3&gt;
+
+&lt;p&gt;Og så kommer vi til prisen. Hvor meget må et ur koste? Ja det afhænger meget af hvad man køber. Skal man bare have noget smart, der skal skiftes ud om et år eller to så skal prisen nok ikke være for høj. Men køber man derimod et ur man vil have resten af sit liv, som f.eks. et Omega eller Rolex ja så gør det ikke så meget at man skal have den store tegnebog frem.
+Sagen med gadgets idag er, at deres levetid er utrolig kort. Hvis noget skal holde mere end et år til to år så skal man være utrolig heldig. Se bare på hvor hurtigt folk skifter telefoner. De virker gammeldags og grimme. Og på et tidspunkt så stopper producenten med at komme med softwareopdateringer (Ja jeg kigger på dig Samsung). 
+Det samme vil gøre sig gældende for et iWatch. Et ur, der kun skal holde et år eller to. Det nuværende Samsung Galaxy Gear koster 2000kr - og hvis man sætter dette overfor priserne for en iPhone eller iPad, så er det nok ikke helt ved siden af. Men det er i min bog stadig en høj pris for en lille dum gadget, der kan vise tiden.&lt;/p&gt;
+
+&lt;h2&gt;iDimsen&lt;/h2&gt;
+
+&lt;p&gt;Nå men når jeg nu ikke tror det bliver et &amp;quot;ur&amp;quot; Apple kommer med, hvad kunne det så være. Efter WWWDC 2014 står det mig ret klart, at uanset hvad det er så skal det knyttes op på deres nye Health Kit.
+Jeg tror ikke på, at Apple vil lave noget, der tager opmærksomheden væk fra deres telefon - og er nok mere over i den lejr, der hedder en &amp;quot;dims&amp;quot; der kan kommunikere med din iPhone.
+Dette kan f.eks. være et armbånd lidt ala det FitBit Tim Cook er så vild med. En lille dims du altid har på dig, som hele tiden opsamler data og løbende sender disse over til din telefon. Og så er det på telefonen du så kan holde øje med dit kondital, antal skridt osv. osv.
+Ved at lave en lille passiv dims uden display så har de også større mulighed for at få en bedre batteritid - og samtidigt lave et design, der henvender sig til både mænd og kvinder.
+Nogle har endda snakket om noget så vildt som en fingerring - og tjoooo det kunne da godt være, men for mig lyder det lidt for sci-fi agtigt.&lt;br&gt;
+&lt;em&gt;Edit(12-06-2014):&lt;/em&gt; &lt;a href=&quot;http://www.macrumors.com/2014/06/10/ringly-smart-ring/&quot;&gt;Og så alligevel&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Jeg har ingen anelse om hvad de kommer med - men jeg glæder mig til at se hvad de finder på. For en ting kan man være sikker på med Apple og der er at de kan finde ud af at forbløffe og lave fede ting.&lt;/p&gt;
+</description>
+                <pubDate>Wed, 11 Jun 2014 23:00:00 +0200</pubDate>
+                <link>http://infiniteloop.dk/2014/06/11/idims.html</link>
+                <guid isPermaLink="true">http://infiniteloop.dk/2014/06/11/idims.html</guid>
+            </item>
+        
+            <item>
+                <title>Javascript Automation i OS X 10.10</title>
+                <description>&lt;p&gt;På &lt;a href=&quot;https://developer.apple.com/wwdc/&quot;&gt;WWDC&lt;/a&gt; i sidste uge kom det frem at Mac OS fra OS X 10.10 udover AppleScript vil understøtte Javascript som scripting og Automation sprog.&lt;/p&gt;
+
+&lt;p&gt;Apple har nu offentliggjort deres &lt;a href=&quot;https://developer.apple.com/library/prerelease/mac/releasenotes/InterapplicationCommunication/RN-JavaScriptForAutomation/index.html&quot;&gt;Release Notes&lt;/a&gt; hvor man kan se lidt mere om syntaksen og finde lidt kodeeksempler til hvordan man benytter det &amp;quot;nye&amp;quot; sprog.&lt;/p&gt;
+
+&lt;p&gt;Det er også muligt at høre lidt mere om denne opdatering i &lt;a href=&quot;https://developer.apple.com/videos/wwdc/2014/&quot;&gt;Javascript for Automation&lt;/a&gt; sessionen fra WWDC.&lt;/p&gt;
+
+&lt;p&gt;Jeg er rigtigt spændt på hvor god og gennemført denne integration er - og glæder mig rigtigt meget til at lege mere med det.&lt;/p&gt;
+</description>
+                <pubDate>Tue, 10 Jun 2014 08:00:00 +0200</pubDate>
+                <link>http://infiniteloop.dk/2014/06/10/yosemite-javascript.html</link>
+                <guid isPermaLink="true">http://infiniteloop.dk/2014/06/10/yosemite-javascript.html</guid>
+            </item>
+        
+    </channel>
+</rss>

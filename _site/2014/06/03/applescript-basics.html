@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>
+        
+            Applescript - The basics | Infiniteloop.dk
+        
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/cosmo/bootstrap.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'> 
+        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="sidebar" class="text-center">
+            <h2><strong>Infinite</strong>Loop</h2>
+<h6>af morten sieker</h6>
+<h5>En weblog om teknologi, softwareudvikling og hverdagens små nørderier</h5>
+<a href="#" class="menutoggle"><i class="fa fa-bars"></i></a>
+<nav id="sidemenu">
+    <ul class="list-unstyled">
+        <li><a href="/">Hjem</a></li>
+        <li><a href="/arkiv">Arkiv</a></li>
+        <li><a href="/soeg">Søg</a></li>
+        <li><a href="/om">Om</a></li>
+        <li><a href="http://infiniteloop.dk/rss.xml" target="_blank">RSS <i class="icon-rss"></i></a></li>
+    </ul>
+</nav>
+<!--div id="sidesocials" class="row">
+    <div class="col-xs-12" style="margin-bottom: 5px;">
+        KONTAKT
+    </div>
+    <div class="col-xs-3"></div>
+    <div class="col-xs-3 text-center">
+        <a href="http://twitter.com/mortensieker" target="_blank"><i class="icon-twitter"></i></a>
+    </div>
+    <div class=" col-xs-3 text-center">
+        <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#111;&#114;&#116;&#101;&#110;&#64;&#105;&#110;&#102;&#105;&#110;&#105;&#116;&#101;&#108;&#111;&#111;&#112;&#46;&#100;&#107;'>
+        <i class="icon-envelope"></i></a>
+    </div>
+    <div class="col-xs-3"></div>
+</div-->
+        </div>
+        <div id="container">
+            <div id="stage">
+                
+<section class="post">
+    <h1><a href="/2014/06/03/applescript-basics.html">Applescript - The basics  &#xffeb;</a></h1>
+     
+     <h3 class="postdate">
+        <i class="fa fa-tag"></i>
+        
+            <a href="/emne/applescript.html" title="AppleScript">AppleScript</a> /
+        
+        03&nbsp;Juni&nbsp;2014</h3>
+     
+    <article class="markdown">
+        
+            <p>Dette indlæg er til Mac folket. Det omhandler nemlig noget så spændende som <strong>Applescript</strong>.<br>
+Dette kunne måske lyde skræmmende for den gængse &quot;ikke udviklertype&quot; macbruger. Men det skulle gerne i løbet af indlægget stå klart, at det faktisk ikke er helt så kompleks og ret nemt at komme igang med.</p>
+
+<p><em>AppleScript</em> er dog ikke noget jeg hurtigt kan gennemgå i én artikel. Så dette vil være en hurtig intro til nogle af de sjove ting man kan lave med <em>AppleScript</em>, som forhåbentlig vil få Jer igang med selv at lege med sproget.</p>
+
+<h2>Hvad er AppleScript</h2>
+
+<p>Men hvad er <em>AppleScript</em>, og hvorfor er det værd at vide noget om som Macbruger? <em>AppleScript</em> er et simpelt engelsklignende scriptingsprog, der er indbygget i Mac OS X. Sproget har en dyb integration til hele operativsystemet, så det kan bruges både til at automatisere rigtigt mange OS specifikke handlinger, men også handlinger knyttet til de installerede programmer.
+Denne dybe integration kommer fra brugen af såkaldte <em>AppleEvents</em>. Dette er en grundlæggende kommunikationsform for Mac applikationer, der har været brugt helt tilbage fra før Mac OS X tiden. Disse simple events bliver brugt hele vejen igennem OS X arkitekturen både til interne kommandoer såsom: Åben fil, Luk Finder vindue, klik på dette menupunkt osv. osv. Men også til kommunikation fra OS&#39;et til de installerede programmer. Og mange af de applikationer man har installeret tilbyder faktisk et lille library af operationer man kan bruge direkte fra sit <em>AppleScript</em> til at udføre opgaver i programmet.</p>
+
+<h2>AppleScript editor</h2>
+
+<p>Den nemmeste måde at komme igang med <em>AppleScripts</em> er via den indbyggede editor, <em>AppleScript Editor</em>.
+<img src="/blog-images/applescript1/1.png" alt="Editor">
+Editoren er opdelt i to felter. I det øverste felt skal man skrive sin kode, og i det nederste felt kan man se resultatet af den kørte kode.</p>
+
+<h2>Kompileret eller fortolket</h2>
+
+<p>Nu vil jeg ikke komme ud i en lang snak omkring kompilerede og fortolkede sprog - men mange vil nok falde over &quot;Compile&quot; knappen i editoren. Dette betyder ikke at <em>AppleScript</em> i den traditionelle C/Java forstand er et kompileret sprog. Der sker godtnok en kompilering af koden over til noget lidt nærmere maskinsprog. Men dette sker Run-time. Så det &quot;compile&quot; knappen hjælper os med er nærmere en parsning og hjælp til at validere vores syntaks. Det vil sige, den fortæller os ikke om scriptet laver det vi forventer, men mere om vi har lavet nogle slå-fejl eller har brugt forkerte navne på operationer.</p>
+
+<h2>Det første <em>AppleScript</em></h2>
+
+<p>Men lad os komme igang med at skrive det første <em>AppleScript</em>. Dette vil ikke være en introduktion til programmering, og det er som sagt heller ikke nødvendigt.</p>
+
+<p>Men her er vores første script:
+<script src="https://gist.github.com/mortensieker/29cbada42dc9be918f45.js"> </script>
+Som sagt så har sproget en syntaks, der minder rigtigt meget om det engelske sprog. </p>
+
+<p>Så det vi i denne type script gør er <code>tell application &quot;Application name&quot;</code>. Her fortæller vi at vi vil have applikation X til at gøre noget.
+Denne blok afsluttes med en <code>end tell</code> for at fortælle compileren at nu er vi færdig med at udføre det vi vil have applikation X til at gøre.
+Applikationsnavnet er det navn applikationen har i Jeres Application folder. Dette navn skal altid sættes i citationstegn.</p>
+
+<p>Indeni sådan vores &quot;tell blok&quot; fortæller vi så hvad vi vil have den angivne application til at lave. Dette foregår også via vores pseudo engelsklignende sprog. I dette tilfælde <code>make new Finder window</code>.</p>
+
+<h2>Library</h2>
+
+<p>Ligesom med andre programmeringssprog så er der naturligvis også et <a href="http://da.wikipedia.org/wiki/Application_programming_interface">API</a> hvor man kan finde mere information om hvilke programmer, der tilbyder <em>AppleScript</em> integration og hvilke metoder de udstiller. Dette er det såkaldte &quot;Library&quot;. 
+<img src="/blog-images/applescript1/2.png" alt="Library"></p>
+
+<p>Når du åbner <em>Library</em> første gang så er det ikke alle apps du kan finde derinde. Men via den lille &quot;plus&quot; knap i øverste venstre side kan du tilføje de apps du gerne vil interagere med. Hvis du dobbeltklikker på den app du gerne vil kode op imod, så kommer der en ny dialog frem hvor man kan se alle de kommandoer man kan kalde i applikationen.
+<img src="/blog-images/applescript1/3.png" alt="API"></p>
+
+<h2>Thats it...</h2>
+
+<p>Mere skal der sådanset ikke til, og du er nu klar til selv at gå ud og lave din egne <em>AppleScripts</em>. Det virker måske meget simpelt lige nu, og det er hele hemmeligheden... Det er det også... </p>
+
+<p>Selv med simple scripts kan man lave utroligt meget.
+Noget der også gør sproget utroligt brugbart er at rigtigt rigtigt mange apps tilbyder at køre <em>Applescripts</em> som en del af deres workflows.
+Heriblandt apps såsom <strong><a href="http://www.alfredapp.com/">Alfred</a></strong>, <strong><a href="http://infiniteloop.dk/2014/01/17/hazel/">Hazel</a></strong>, <strong><a href="https://smilesoftware.com/TextExpander/index.html">Text Expander</a></strong> osv. osv.</p>
+
+<p>Et par eksempler på scripts jeg bruger næsten hver dag er:</p>
+
+<ul>
+<li>Når jeg skal til at optage et podcast så vil jeg gerne have så lidt kørende i baggrunden som overhovedet muligt. Jeg har derfor lavet et lille <a href="http://www.alfredapp.com/">Alfred</a> workflow som i bund og grund bare kører en mængde små <em>AppleScripts</em>, der lukker alle de applikationer jeg ved tager mange ressourcer, samt pauser alle mine backup programmer.
+På samme måde har jeg et lille workflow, der kører scripts der starter alt op igen når jeg er færdig.</li>
+<li>Jeg har lavet et script til at interagere med <a href="http://www.mamp.info/en/">MAMP</a>: Start, stop osv. osv.</li>
+<li>Jeg har scripts, der hjælper mig med at deaktivere og aktivere de ting jeg vil have kørende når jeg tager min laptop med mig og reelt ikke vil have den til at fungere som en &quot;desktop&quot; computer længere.</li>
+</ul>
+
+<p>Det korte af det lange er. Der er uanede muligheder og det er super super nemt at komme igang.</p>
+
+<p>Rigtig god fornøjelse.</p>
+
+        
+    </article>
+    
+</section>
+
+            </div>
+        </div>
+        
+        <script src="/js/loop.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-3809485-8', 'infiniteloop.dk');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,245 @@
+[
+
+    
+        {
+            "title": "iPhone bug kan lede til ufrivillige opkald",
+            "content": "En sikkerhedsbrist fundet i iOS tillader 3-part apps, at ringe op til et telefonnummer uden at brugeren skal godkende det først.\n\n\nApple has mentioned in its RFC that there is a feature in iOS called ‘tel’, which implements the functionality that when a user receives a phone number in webpage, iOS displays alerts asking user to confirm the action (to call or not to call). However, when the user receives a phone number in a native app, it doesn’t ask for confirmation instead it directly dials the number and calls right away as the user taps the phone number received.\n\n\nDette kan også bruges til at starte et Facetime opkald uden brugeren er opmærksom på dette, hvilket giver modtageren af opkaldet mulighed for at fange et hurtigt screenshot eller en video af hvad du går og foretager dig lige nu.\n\nLæs mere via nedenstående link.\n\nKilde: Techfrag.com\n",
+            "link": "http://infiniteloop.dk/2014/08/26/iphone-security-flaw.html",
+            "date": "2014-08-26 07:50:00 +0200",
+            "excerpt": null
+        }
+    
+
+    
+        ,{
+            "title": "1 års gratis Lastpass Premium",
+            "content": "Du har sikkert hørt det en million gange allerede, men det er rigtigt vigtigt at have styr på sine password.\nOg ikke bare at have styr på dem, men at bruge forskellige passwords til dine online konti, og dernæst at skifte dem ofte.\n\nEt af de bedste tools til at hjælpe dig med dette er Lastpass, og du kan lige nu få et år gratis ved at benytte nedenstående link.\n\nKilde: AppSumo\n",
+            "link": "http://infiniteloop.dk/2014/08/25/lastpass.html",
+            "date": "2014-08-25 21:50:00 +0200",
+            "excerpt": null
+        }
+    
+
+    
+        ,{
+            "title": "Google Play Store tilbagebetaling",
+            "content": "Indenfor den seneste uges tid har Google Play Store ændret deres politik mht. tilbagebetaling af køb i butikken.\nHidtil har tidsrammen for tilbagebetaling være 15 minutter. Men det ser nu, til køberens fordel, ud til at være ændret til 2 timer.\n\nKilde: LifeHacker\n",
+            "link": "http://infiniteloop.dk/2014/08/25/google-play-refunds.html",
+            "date": "2014-08-25 07:30:00 +0200",
+            "excerpt": null
+        }
+    
+
+    
+        ,{
+            "title": "Hazel",
+            "content": "Dette indlæg er fra min gamle blog, men det gør det ikke mindre relevant. Det er en anbefaling af en applikation, der er intet mindre end genial. Og en applikation, der er et &quot;must have&quot; for produktivitetsnørder som mig selv.\nHazel er i alt sin enkelthed en app, der gør at man kan knytte en mængde &quot;regler&quot; eller &quot;actions&quot; til en folder. Det lyder måske dumt, men det er sindsygt brugbart.  \n\nHazel er simpelt opbygget og det er rigtigt nemt at opsætter nye regler.\nI hovedvinduet kan man i venstre side kan se de foldere hvortil man har knyttet regler. I højre side kan man se hvilke regler der er tilknyttet den enkelte folder.\n\n\n\nOpsætningen af reglerne er via en simpel form, hvor man via en masse foruddefinerede elementer kan fortælle hvad og hvornår noget skal ske.\n\n\n\nOg det er sådanset det hele.\nMan har som en ekstra lille ting også mulighed for at få Hazel til at tømme papirkurven.\n\n\n\nHer er en par simple eksempler på brug af Hazel:\n\nDropbox og Kamera uploads fra mobil\n\nJeg er nok ikke den eneste der på mobiltelefonen har automatisk upload af billeder til Dropbox slået til. \nDette er i sig selv en rigtig lækker feature, og hvis man har Dropbox installeret på sin Mac så bliver disse billeder automatisk hentet ned dertil næste gang man tænder den.\nNoget af det jeg gør løbende er at kopiere disse billeder væk fra Dropbox folderen (da de tager plads) og over i en folder hvorfra der bliver taget backup til skyen (Ved brug af services som Crashplan eller BackBlaze).\nProblemet er at jeg skal gøre dette manuelt.\n\nLøsningen til dette problem\nJeg opretter en overvågning på min Dropbox/Camera Uploads mappe.\nJeg laver en regel, der siger at hver gang der kommer nye filer heri så flyttes de automatisk over i min backup-folder i en folderstruktur der svarer til det år og den måned billedet er taget.\nOg wupti så skal jeg aldrig tænke på det mere. De bliver nu automatisk slettet fra dropbox, og de er nu inde i en folder der bliver taget backup af.\n\nOvenstående er også en perfekt måde at sikre sig backup af sine billeder fra Apples fotostream.\n\nOptagelse af podcast og backup af optagelse\n\nEt par gange om måneden optager jeg et podcast. Efter hver optagelse kopierer jeg de rå filer over på min NAS for at være sikker på at have en backup hvis nu computeren skulle gå ned inden jeg når at få dem redigeret færdig. Dette er ikke et stort problem, men som alt muligt andet så tager det tid.  \n\nLøsning på dette problem\nLav en overvågning på den folder hvor mit optageprogram (Her: Audio Hijack Pro) smider de rå filer. Når der så kommer en ny fil i denne mappe så kopieres filerne automatisk over til en folder på min NAS.\nDet er simpelt men super brugbart.\n\nOSX Mavericks &amp; Tags\n\nEr du en af dem der bruger Tags så kan Hazel faktisk også hjælpe dig med det, da du kan opsætte regler der automatisk tagger dine filer. F.eks. kan de føromtalte billeder fra mobilen også automatisk blive tagget med &quot;billeder&quot; &amp; &quot;mobil&quot;.\n\nHold styr på din Downloads folder\n\nEn mappe der hurtigt bliver fyldt op med en masse filer er Downloads folderen. For at undgå dette så har jeg lavet en lille regel, der sletter alt der ikke har været modificeret indenfor den seneste uge.\n\nDette er bare et par yderst simple eksempler. Man kan lave meget meget mere. Blandt andet få regler til at eksekvere Applescripts osv. osv. Det er et simpelt og fedt lille tool at lege med - og jeg kan kun anbefale at man køber det. Ja det koster desværre lidt klejner ($28), men jeg synes det er det hele værd.  \n\nHazel kan købes her\n",
+            "link": "http://infiniteloop.dk/2014/07/23/hazel.html",
+            "date": "2014-07-23 13:30:00 +0200",
+            "excerpt": null
+        }
+    
+
+    
+        ,{
+            "title": "Lego Batman Tumbler",
+            "content": "Så er Lego igen på banen med godt nyt til alle Batman-fans. Det er lige kommet frem at de til september sender intet mindre end Batmans Tumbler fra Christopher Nolan filmene på gaden.\n\n\n\nSættet består af intet mindre end 1896 stykker Lego, hvilket er over 800 stykker mere end den forrige Batmobil fra 2006.\n\n\n\nPrisen er desværre også derefter idet den kommer på gaden til $199 i USA, hvilket nok betyder 1500-2000kr herhjemme.\n\nSættet ser dog intet mindre end fantastisk ud, så jeg vil begynde min opsparing med det samme :)\n\nKilde: IGN\n",
+            "link": "http://infiniteloop.dk/2014/07/21/lego-tumbler.html",
+            "date": "2014-07-21 21:30:00 +0200",
+            "excerpt": null
+        }
+    
+
+    
+        ,{
+            "title": "Monument Valley rammer 1mil. downloads",
+            "content": "Spillet Monument Valley til iPad runder nu de 1mil. solgte eksemplarer, og det må siges at være velfortjent for det er intet mindre en fantastisk.\n\n\n\nSpillet er tydeligvis inspireret af M. C. Eschers billeder såsom dette af Waterfall. Det er ikke ret langt men til gengæld rigtigt sjovt hele vejen igennem. Det er et spil for hele familien og jeg kan sige at min knægt på 3-4 år på alle måder er solgt. De første baner kan han klare uden hjælp - resten tager vi sammen. Hvilket i sig selv også er det hele værd.  \n\n  \n\nHar du endnu ikke prøvet spillet så er det stadig på tilbud til 13kr på App Store\n\nKilde: Techcrunch\n",
+            "link": "http://infiniteloop.dk/2014/07/19/monument-valley.html",
+            "date": "2014-07-19 09:30:00 +0200",
+            "excerpt": null
+        }
+    
+
+    
+        ,{
+            "title": "Ingen custom skins til Android Wear",
+            "content": "Efter lang tids undren er det endelig kommet frem at det ikke bliver muligt at lave custom skins til første udgave af Android Wear. Dog med et API klar til senere på året.\nWayne Piekarski, senior developer advocate fra Google begrunder det med:\n\n\nCustom watch faces are activities running inside another process. However, they have some special considerations due to interactions with the stream and always-on ambient mode--including using a shorter peek card, moving the status indicators for battery and mute, and rendering the faces differently in ambient mode. Right now, without an official API, making a really great watch face currently takes a fair bit of tweaking. \n\nWe are working to make this as simple as possible for you so that it’s easy to make good-looking faces that work well across multiple form factors, conserve battery, and display the user’s card stream nicely. Some of these changes won’t be ready until we migrate Android Wear to the Android L release later this year, but don’t fret: they’re coming!\n\n\nNetop når det er Android, der gør meget ud af at lade anvenderen tilpasse brugeroplevelsen så er dette et absolut &quot;must&quot;. Det er absolut ikke noget jeg ville forvente af et eventuelt ur fra Apple. Men bestemt fra Android Wear på linie med en Custom Launcher til en telefon.\n\nKilde: Ars Technica\n",
+            "link": "http://infiniteloop.dk/2014/07/18/android-wear.html",
+            "date": "2014-07-18 16:00:00 +0200",
+            "excerpt": null
+        }
+    
+
+    
+        ,{
+            "title": "logr - lost in time",
+            "content": "Efter en lille frustration over ikke at kunne finde den &quot;perfekte&quot; app eller hjemmeside \ntil at holde styr på min arbejdstid startede jeg et lille projekt op på GitHub.\nProjektet hedder logr og er en lille JEE 7 REST service med en AngularJS front-end.  \n\nProjektet er stadig et &quot;work in progress&quot;, så kom endelig med kommentarer hvis du finder noget, der ser &quot;spændende ud&quot;.\n\nApplikationen skulle være lige til at hente ned fra GitHub og køre på din egen server.\nDet eneste den kørver er din egen applicationsserver og en datasource.\n\nlogr kan findes her\n",
+            "link": "http://infiniteloop.dk/2014/06/18/logr-lost-in-time.html",
+            "date": "2014-06-18 08:00:00 +0200",
+            "excerpt": null
+        }
+    
+
+    
+        ,{
+            "title": "iDimsen fra Apple",
+            "content": "I de seneste måneder har stortset alle online publikationer haft artikler om Apples næste store satsning, et iWatch. \nJeg har aldrig rigtigt kunne se det smarte i et iWatch, og har derfor også været lidt skeptisk for om det er den vej Apple vælger at gå. \nOg nu vi ikke så noget nyt til WWDC 2014 så synes jeg lige jeg vil dele mine tanker herinde.\n\niWatch?\n\nAt Apple kommer med noget wearable i år er bestemt ikke det jeg betvivler. I slutningen af sidste år blev det offentliggjort at den tidligere CEO fra Burberry Angela Ahrendts blev den nye Senior VP for Apple Retail. Dette betyder naturligvis ikke, at hun vil få indflydelse på Apples kommende produkter, men dette sammenholdt med de rygter, der har floreret og Apples nylige indkøb af Beats peger i en retning af, at Apple er begyndt at overveje nye tiltag indenfor design og wearable.\n\nMen hvorfor er det så jeg tvivler på at det bliver et iUr, når vi har set firmaer som Pebble og Samsung lancere deres produkter.\nDet er der mange grunde til og her til efteråret kan det meget vel være, at det viser sig at jeg tager fejl. Men indtil videre forholder jeg mig en smule skeptisk.\n\nSo last year\n\nJeg har ikke et statistisk grundlag, der kan begrunde dette, men hvor mange af Jer går stadig med et ur?\nJeg gør det stadig når jeg &quot;husker&quot; at tage det på om morgenen. Men de fleste dage bruger jeg min telefon når jeg skal finde ud af hvad klokken er. Og netop denne trend med at erstatte armbåndsuret med en telefon er noget Apple selv har været med til at skabe. Dette er med til at gøre din telefon til mere end bare endnu en gadget. Med til at gøre den til en essentiel del af din hverdag, din garderobe og dit liv.\nOg en ting jeg er sikker på med den nye iDims er, at hvis Apple kommer ud med noget nyt, så vil det på ingen måde være noget, der tager opmærksomheden væk fra deres guldæble, iPhonen. På samme måde kan man ud fra de seneste mange års lanceringer se, at der er en grund til at Apple holder lidt igen og ikke er &quot;first movers&quot; på mange områder. De vil være sikre på at produktet er gennemarbejdet og gennemtænkt, men også at der er et marked for deres produkter. Så hvis det bliver et ur, så er det ikke bare fordi de ser et lille niche-marked for dette. Men derimod et marked i vækst.\n\nSkærmstørrelse og kønsopdelte produkter\n\nEn ting mange ikke har med i overvejelserne når de snakker om et iWatch er kønsopdelte produkter. \nVi har så vidt jeg husker endnu ikke set Apple lave kønsopdelte produkter, men dette må næsten være en nødvendighed hvis de laver et iWatch.\nDer er stor forskel på håndledsstørrelser, og der vil derfor også være et behov for forskellige størrelser henvendt til mænd, kvinder, børn osv.\n\nHertil kommer problemet med skærmstørrelsen. De mockups vi har set florere på nettet den seneste tid har haft en størrelse, der kun henvender sig til mænd. Netop for at kunne presse en ekstra stor skærm ned over uret. \nEt ur med en mindre skærm vil enten have en mindre font størrelse eller alternativt have færre detaljer. Jeg begynder allerede at få koldsved bare ved tanken om at skulle kode op imod så små skærme og derudover at understøtte flere forskellige skærmstørrelser. Men det er nok bare mig.\n\nBatteri\n\nEn anden ting man ikke kan undgå at snakke om, når man er inde omkring skærmstørrelsen, er batteriforbrug. En af de ting, der bruger mest strøm på vores smartphones i dag er skærmen. Skærmen vil naturligvis være mindre på et ur, men det vil pladsen til batteriet også.\n\nSå kan man overveje om de kunne lave en skærm, der er slukket det meste af tiden og kun tænder når man &quot;drejer hånden&quot;. Dette har jeg prøvet på et løbeur og det virker også 80% af gangene. Men de sidste 20% er nok til at det ikke føles naturligt.\n\nDet Pebble har gjort med deres ur er at sætte et lille sort/hvid low power lcd display i uret, hvilket gør at de kan klemme 5-7 dages strøm ud af det.\nSamsung selv har smidt et Super Amoled display i deres ur, hvilket bruger en del mere størm - og ved normal brug får man cirka 25 timer ud af uret.\n\nDette er bare ikke godt nok. Et ur, der skal oplades hver dag er i min bog ikke noget værd. Jeg tror ikke Apple vil gå sort/hvid vejen, så enten skal de have fundet på noget super smart, hvilket heller ikke er utænkeligt, eller også har de en helt anden opfattelse end mig af hvor længe et ur skal holde på en &quot;opladning&quot;.\n\niOS\n\nMængden af detaljer på skærmen er også vigtigt at have in mente. Vil uret køre en fuld udgave af iOS, eller vil Apple lave et styresystem (miniOS), der skal opdateres og holdes ved lige? De har jo naturligvis stadig bastarden AppleTV, der lurer i baggrunden så tjooo hvorfor ikke en ekstra af disse. Hvis de vil have 3parts apps til deres dims så vil det være helt naturligt at gøre det en del af den SDK udviklerne kender i dag - men et fuldt iOS lyder også af overkill. Dog kunne man spekulere om det de arbejder hen imod med den lagdeling og konteks awareness de kom med i iOS 7 peger i denne retning.\n\nPrisen\n\nOg så kommer vi til prisen. Hvor meget må et ur koste? Ja det afhænger meget af hvad man køber. Skal man bare have noget smart, der skal skiftes ud om et år eller to så skal prisen nok ikke være for høj. Men køber man derimod et ur man vil have resten af sit liv, som f.eks. et Omega eller Rolex ja så gør det ikke så meget at man skal have den store tegnebog frem.\nSagen med gadgets idag er, at deres levetid er utrolig kort. Hvis noget skal holde mere end et år til to år så skal man være utrolig heldig. Se bare på hvor hurtigt folk skifter telefoner. De virker gammeldags og grimme. Og på et tidspunkt så stopper producenten med at komme med softwareopdateringer (Ja jeg kigger på dig Samsung). \nDet samme vil gøre sig gældende for et iWatch. Et ur, der kun skal holde et år eller to. Det nuværende Samsung Galaxy Gear koster 2000kr - og hvis man sætter dette overfor priserne for en iPhone eller iPad, så er det nok ikke helt ved siden af. Men det er i min bog stadig en høj pris for en lille dum gadget, der kan vise tiden.\n\niDimsen\n\nNå men når jeg nu ikke tror det bliver et &quot;ur&quot; Apple kommer med, hvad kunne det så være. Efter WWWDC 2014 står det mig ret klart, at uanset hvad det er så skal det knyttes op på deres nye Health Kit.\nJeg tror ikke på, at Apple vil lave noget, der tager opmærksomheden væk fra deres telefon - og er nok mere over i den lejr, der hedder en &quot;dims&quot; der kan kommunikere med din iPhone.\nDette kan f.eks. være et armbånd lidt ala det FitBit Tim Cook er så vild med. En lille dims du altid har på dig, som hele tiden opsamler data og løbende sender disse over til din telefon. Og så er det på telefonen du så kan holde øje med dit kondital, antal skridt osv. osv.\nVed at lave en lille passiv dims uden display så har de også større mulighed for at få en bedre batteritid - og samtidigt lave et design, der henvender sig til både mænd og kvinder.\nNogle har endda snakket om noget så vildt som en fingerring - og tjoooo det kunne da godt være, men for mig lyder det lidt for sci-fi agtigt.\nEdit(12-06-2014): Og så alligevel\n\nJeg har ingen anelse om hvad de kommer med - men jeg glæder mig til at se hvad de finder på. For en ting kan man være sikker på med Apple og der er at de kan finde ud af at forbløffe og lave fede ting.\n",
+            "link": "http://infiniteloop.dk/2014/06/11/idims.html",
+            "date": "2014-06-11 23:00:00 +0200",
+            "excerpt": null
+        }
+    
+
+    
+        ,{
+            "title": "Javascript Automation i OS X 10.10",
+            "content": "På WWDC i sidste uge kom det frem at Mac OS fra OS X 10.10 udover AppleScript vil understøtte Javascript som scripting og Automation sprog.\n\nApple har nu offentliggjort deres Release Notes hvor man kan se lidt mere om syntaksen og finde lidt kodeeksempler til hvordan man benytter det &quot;nye&quot; sprog.\n\nDet er også muligt at høre lidt mere om denne opdatering i Javascript for Automation sessionen fra WWDC.\n\nJeg er rigtigt spændt på hvor god og gennemført denne integration er - og glæder mig rigtigt meget til at lege mere med det.\n",
+            "link": "http://infiniteloop.dk/2014/06/10/yosemite-javascript.html",
+            "date": "2014-06-10 08:00:00 +0200",
+            "excerpt": null
+        }
+    
+
+    
+        ,{
+            "title": "PHP og RESTful services",
+            "content": "I samme stil som mit indlæg med /2014/06/01/jee7-rest.html så vil jeg her vise hvor nemt det er at komme igang med PHP og RESTful services.\n\nI modsætning til det forrige indlæg vil jeg denne gang ikke skrive det selv. Jeg vil derimod gøre brug af et lille framework kaldet Slim.  \n\nDet vil ikke være noget problem at skrive det hele selv, det kræver bare alt alt for meget kode - og indeholder så mange elementer man selv skal tage hånd om, at det hurtigt bliver uoverskueligt. (Tro mig, jeg har skrevet mange REST services i PHP før jeg fandt Slim).\n\nJeg er også stor fortaler for at bruge 3-parts frameworks. Og i særdeleshed light-weight frameworks som Slim, der ikke prøver på at være noget stort og redde hele verden. Slim gør én ting, og det gør det godt.\n\nFor et par år siden kom der et yderligere lille framework til PHP jeg også vil gøre brug af her, nemlig Composer. Composer er et simpelt &quot;dependency management&quot; tool til PHP meget lig det man kan lave i maven og gradle til Java apps.\nEn dybdegående gennemgang af Composer må komme en anden god gang, så indtil videre går jeg udfra at det er installeret og på din path.\n\nFor at få Composer til at hente nyeste udgave af Slim ind i dit projekt skal du tilføje følgende til din composer.json\n\n&quot;require&quot;: {\n        &quot;slim/slim&quot;: &quot;2.*&quot;\n}\n\n\nOg derefter køre composer install.\n\nDu har nu hentet Slim frameworket ned i en folder kaldet &quot;Vendor&quot; i roden på din applikation, og har nu alt hvad der skal til for at lave en ultra letvægts RESTful service i PHP.\n\nStart med at lave en index.php fil med følgende indhold\n\n\nLinie 2 er Slims automatiske fil/afhængigheds-loader. Det er ikke noget du skal tænke videre over. Men det den gør er at hver gang der refereres til en fil i Slim frameworket, som ikke er inkluderet så finder den filen og gør det for dig.\n\nLinie 4 starter en ny Slim app, og her er måske noget nyt alt efter hvilken version af PHP du plejer at køre. I PHP 5.3 blev der indfør namespaces, som man kender fra sprog såsom Java, C# osv. osv. Det man kan undre sig lidt over er måden hvorpå det er implementeret. Nemlig som \\Pakke\\ istedet for en dot-notation. Oh well, det er ikke den eneste ting ved PHP der er underlig.\n\nFra linie 6 og frem kommer vi til det sjove. Linie 6-8 er i bund og grund en REST resource i sin simpleste form. Man vælger request metoden, her en GET. Angiver siten og input parametre og til slut angiver det kode der skal eksekveres i en closure / anonym metode.\n\nLinie 10-12 er det samme bare med et POST kald.\n\nLinie 14 starter Slim applikationen og den lytter nu efter input.\n\nEn sidste ting der mangler er en .htaccess fil der kan hjælpe dig med at route alle kald hen til din index.php fil.\nSå lav en ny .htaccess fil i roden på din applikation og giv den følgende indhold:\n\nRewriteEngine On\nRewriteCond %{REQUEST_FILENAME} !-f\nRewriteRule ^ index.php [QSA,L]\n\n\nDette er i bund og grund alt der skal til for at lave en RESTful service i PHP. Der ligger selvfølgelig en masse kode inde i Slim frameworket, men det skal vi heldigvis ikke tænke over.\n\nServicen kan nu rammes på http://localhost/dit-resource-navn/\n\nSlim indeholder rigtigt mange fede muligheder for at lave gode RESTful services så giv deres dokumentation et kig før du går igang.\n\nEn kørende udgave af ovenstående kode kan finde på GitHub\n\nOg som altid, er der spørgsmål så fang mig på Twitter\n",
+            "link": "http://infiniteloop.dk/2014/06/06/php-rest.html",
+            "date": "2014-06-06 08:00:00 +0200",
+            "excerpt": null
+        }
+    
+
+    
+        ,{
+            "title": "Applescript - The basics",
+            "content": "Dette indlæg er til Mac folket. Det omhandler nemlig noget så spændende som Applescript.\nDette kunne måske lyde skræmmende for den gængse &quot;ikke udviklertype&quot; macbruger. Men det skulle gerne i løbet af indlægget stå klart, at det faktisk ikke er helt så kompleks og ret nemt at komme igang med.\n\nAppleScript er dog ikke noget jeg hurtigt kan gennemgå i én artikel. Så dette vil være en hurtig intro til nogle af de sjove ting man kan lave med AppleScript, som forhåbentlig vil få Jer igang med selv at lege med sproget.\n\nHvad er AppleScript\n\nMen hvad er AppleScript, og hvorfor er det værd at vide noget om som Macbruger? AppleScript er et simpelt engelsklignende scriptingsprog, der er indbygget i Mac OS X. Sproget har en dyb integration til hele operativsystemet, så det kan bruges både til at automatisere rigtigt mange OS specifikke handlinger, men også handlinger knyttet til de installerede programmer.\nDenne dybe integration kommer fra brugen af såkaldte AppleEvents. Dette er en grundlæggende kommunikationsform for Mac applikationer, der har været brugt helt tilbage fra før Mac OS X tiden. Disse simple events bliver brugt hele vejen igennem OS X arkitekturen både til interne kommandoer såsom: Åben fil, Luk Finder vindue, klik på dette menupunkt osv. osv. Men også til kommunikation fra OS&#39;et til de installerede programmer. Og mange af de applikationer man har installeret tilbyder faktisk et lille library af operationer man kan bruge direkte fra sit AppleScript til at udføre opgaver i programmet.\n\nAppleScript editor\n\nDen nemmeste måde at komme igang med AppleScripts er via den indbyggede editor, AppleScript Editor.\n\nEditoren er opdelt i to felter. I det øverste felt skal man skrive sin kode, og i det nederste felt kan man se resultatet af den kørte kode.\n\nKompileret eller fortolket\n\nNu vil jeg ikke komme ud i en lang snak omkring kompilerede og fortolkede sprog - men mange vil nok falde over &quot;Compile&quot; knappen i editoren. Dette betyder ikke at AppleScript i den traditionelle C/Java forstand er et kompileret sprog. Der sker godtnok en kompilering af koden over til noget lidt nærmere maskinsprog. Men dette sker Run-time. Så det &quot;compile&quot; knappen hjælper os med er nærmere en parsning og hjælp til at validere vores syntaks. Det vil sige, den fortæller os ikke om scriptet laver det vi forventer, men mere om vi har lavet nogle slå-fejl eller har brugt forkerte navne på operationer.\n\nDet første AppleScript\n\nMen lad os komme igang med at skrive det første AppleScript. Dette vil ikke være en introduktion til programmering, og det er som sagt heller ikke nødvendigt.\n\nMen her er vores første script:\n\nSom sagt så har sproget en syntaks, der minder rigtigt meget om det engelske sprog. \n\nSå det vi i denne type script gør er tell application &quot;Application name&quot;. Her fortæller vi at vi vil have applikation X til at gøre noget.\nDenne blok afsluttes med en end tell for at fortælle compileren at nu er vi færdig med at udføre det vi vil have applikation X til at gøre.\nApplikationsnavnet er det navn applikationen har i Jeres Application folder. Dette navn skal altid sættes i citationstegn.\n\nIndeni sådan vores &quot;tell blok&quot; fortæller vi så hvad vi vil have den angivne application til at lave. Dette foregår også via vores pseudo engelsklignende sprog. I dette tilfælde make new Finder window.\n\nLibrary\n\nLigesom med andre programmeringssprog så er der naturligvis også et API hvor man kan finde mere information om hvilke programmer, der tilbyder AppleScript integration og hvilke metoder de udstiller. Dette er det såkaldte &quot;Library&quot;. \n\n\nNår du åbner Library første gang så er det ikke alle apps du kan finde derinde. Men via den lille &quot;plus&quot; knap i øverste venstre side kan du tilføje de apps du gerne vil interagere med. Hvis du dobbeltklikker på den app du gerne vil kode op imod, så kommer der en ny dialog frem hvor man kan se alle de kommandoer man kan kalde i applikationen.\n\n\nThats it...\n\nMere skal der sådanset ikke til, og du er nu klar til selv at gå ud og lave din egne AppleScripts. Det virker måske meget simpelt lige nu, og det er hele hemmeligheden... Det er det også... \n\nSelv med simple scripts kan man lave utroligt meget.\nNoget der også gør sproget utroligt brugbart er at rigtigt rigtigt mange apps tilbyder at køre Applescripts som en del af deres workflows.\nHeriblandt apps såsom Alfred, Hazel, Text Expander osv. osv.\n\nEt par eksempler på scripts jeg bruger næsten hver dag er:\n\n\nNår jeg skal til at optage et podcast så vil jeg gerne have så lidt kørende i baggrunden som overhovedet muligt. Jeg har derfor lavet et lille Alfred workflow som i bund og grund bare kører en mængde små AppleScripts, der lukker alle de applikationer jeg ved tager mange ressourcer, samt pauser alle mine backup programmer.\nPå samme måde har jeg et lille workflow, der kører scripts der starter alt op igen når jeg er færdig.\nJeg har lavet et script til at interagere med MAMP: Start, stop osv. osv.\nJeg har scripts, der hjælper mig med at deaktivere og aktivere de ting jeg vil have kørende når jeg tager min laptop med mig og reelt ikke vil have den til at fungere som en &quot;desktop&quot; computer længere.\n\n\nDet korte af det lange er. Der er uanede muligheder og det er super super nemt at komme igang.\n\nRigtig god fornøjelse.\n",
+            "link": "http://infiniteloop.dk/2014/06/03/applescript-basics.html",
+            "date": "2014-06-03 00:00:00 +0200",
+            "excerpt": null
+        }
+    
+
+    
+        ,{
+            "title": "Java EE7 og RESTful services",
+            "content": "I dette blogindlæg vil jeg vise hvor nemt det er at komme igang med JEE7 og REST. Det vil ikke være en dybdegående gennemgang af Java og RESTful services, men bare lige nok til at komme.\n\nStart med at lave et nyt maven projekt udfra denne archetype:\n\nmvn archetype:generate -Dfilter=com.airhacks:javaee7-essentials-archetype\n\n\nDette giver dig et helt barebone Java EE 7 maven projekt.\n\nDet første du skal gøre er at oprette din CDI deployment descriptor beans.xml i din webapp/WEB-INF folder.\nDu kan enten få dit IDE til at autogenerere den for dig, eller oprette den manuelt med følgende indhold\n\n&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;  \n&lt;beans xmlns=&quot;http://xmlns.jcp.org/xml/ns/javaee&quot; \nxmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; \nxsi:schemaLocation=&quot;http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd&quot;\nbean-discovery-mode=&quot;all&quot;&gt;&lt;/beans&gt;\n\n\nDet vigtige i JEE7 modsat tidligere udgaver er discovery-mode. Hvis du får dit IDE til at autogenerere din beans.xml, så vil denne pr. default stå til annotated. Dette skal ændres til all da du derved fortæller CDI at den automatisk skal finde alle bønner i din applikation.\n\nDet næste du skal lave, iden dette er en &quot;no-web.xml&quot; udgave af en REST service, er din JAXRS configuration. Opret en ny klasse med følgende indhold:\n\n@ApplicationPath(&quot;resources&quot;)\npublic class JAXRSConfiguration extends Application{\n\n}\n\n\nDette svarer til det servlet-mapping URL pattern man plejer at anvende i web.xml.\n\nDet næste der skal laves er din REST resource, så lav en ny simpel POJO Java klasse og annoter den med @Path\n\n@Path(&quot;entries&quot;)\npublic class EntriesResource {\n\n    @Inject\n    EntryService es;\n\n    @GET  \n    public String entries() {\n        return es.getAll();    \n    }\n}\n\n\nDette vil udstille din EntriesResource på en URL lignende dette:  http://localhost/resources/blogentries. Denne resource kan nu eksponere alle de de velkendte HTTP REST request metoder (GET, POST, DELETE, PUT, OPTIONS).\n\nDette gøres ved at lave en ny metode i din klasse og annotere den med den ønskede HTTP request metode. Ligesom i eksemplet ovenfor.\n\nSom du kan se i ovenstående kode så har jeg en reference til noget kaldet en EntriesService. Dette er vores &quot;protokol neutrale&quot; tilgang til vores forretningslogik. \nFår du senere lyst til at lave en SOAP eksponering af denne service, så kan dette gøres relativt ukompliceret og smertefrit ved at tilføje en ny EntriesSOAPStinks klasse, der hånderer eksponeringen på samme måde som vores EntriesResource.  Og vi undgår herved duplikering af forretningslogik.\n\n@Stateless\npublic class EntryService {    \n\n    public String getAll() {\n            return &quot;Affirmative, Dave. I read you.&quot;\n    }\n}\n\n\nVi har nu lavet en lille stateless java bønne, der indeholder vores forretningslogik til at finde frem til det data vores EntriesResource ønsker at returnere.\nDette kan naturligvis udbygges med JPA for at tilgå og skrive data til en database, men det kommer i et senere indlæg.\n\nDette er i bund og grund alt, der skal til for at lave en RESTful webservice i JEE7. Jeg håber dette var nok til at give blod på tanden og selv komme igang med at lave REST services i JEE7.\n\nEt kørende eksempel kan hentes på min GitHub side.\n",
+            "link": "http://infiniteloop.dk/2014/06/01/jee7-rest.html",
+            "date": "2014-06-01 22:00:00 +0200",
+            "excerpt": null
+        }
+    
+
+    
+        ,{
+            "title": "Velkommen tilbage",
+            "content": "Efter en kort pause er infiniteloop tilbage.\nSiden har været igennem en lille migreringsproces og er nu at finde på Github pages.\n\nJeg roder stadig lidt rundt med opsætningen heroppe, men er i det store hele rigtigt glad for flytningen. Siden bygger stadig på Jekyll og det lækre ved at bruge Github Pages er at de selv tager ens source og kompilerer den om til HTML. Noget jeg selv stod for før.\n\nSom I sikkert også kan se så er de gamle artikler væk. Dette er de naturligvis ikke for altid. Men jeg løber dem lige igennem for at se hvilke der stadig er aktuelle og for dem derefter tilpasset sidens nye layoutformat.\n",
+            "link": "http://infiniteloop.dk/2014/06/01/velkommen-tilbage.html",
+            "date": "2014-06-01 21:50:00 +0200",
+            "excerpt": null
+        }
+    
+
+
+
+    
+
+    
+
+    
+        ,{
+            "title": "Om | Infiniteloop.dk",
+            "content": "    Om InfiniteLoop.dk    Denne hjemmeside er en weblog skrevet af mig, Morten Sieker.     Min primære profession er software- og web-udvikling, men er også kendt for fra tid til anden         at begive mig ud i en lille snak omkring film og tegneserier.    teknologier    Hjemmesiden er lavet med følgende frameworks:            Jekyll        Jekyll tagging plugin        Jekyll search with json        Twitter Bootstrap           JQuery           Font Awesome           Andet    Andre projekter jeg har gang i:            De Gnavne Filmnørders podcast        Kontakt    Jeg kan kontaktes på følgende måde:            Email - &#109;&#111;&#114;&#116;&#101;&#110;&#64;&#105;&#110;&#102;&#105;&#110;&#105;&#116;&#101;&#108;&#111;&#111;&#112;&#46;&#100;&#107;        Twitter -  mortensieker    ",
+            "link": "http://infiniteloop.dk/om/",
+            "date": null,
+            "excerpt": null
+        }
+    
+
+    
+
+    
+        ,{
+            "title": "Arkiv | Infiniteloop.dk",
+            "content": "        {% assign gyear = 0 %}    {% for post in site.posts%}                {% assign page = post %}        {% assign year =  post.date | date: \"%Y\")  %}        {% if gyear != year %}            {% assign gyear = year %}                        {{gyear}}                                            {% endif %}            {{ post.date | date_to_string }}        {{ post.title }}            {% endfor %}    ",
+            "link": "http://infiniteloop.dk/arkiv/",
+            "date": null,
+            "excerpt": null
+        }
+    
+
+    
+        ,{
+            "title": "Infiniteloop",
+            "content": "    {% for post in paginator.posts %}        {% include post.html %}          {% endfor %}    {% if paginator.previous_page %}    {% if paginator.previous_page == 1 %}      Nyere →    {% else %}      Nyere →    {% endif %}  {% else %}    Nyere →  {% endif %}  {% if paginator.next_page %}    ← Ældre  {% else %}    ← Ældre  {% endif %}  ",
+            "link": "http://infiniteloop.dk/",
+            "date": null,
+            "excerpt": null
+        }
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        ,{
+            "title": "Infiniteloop",
+            "content": "    {% for post in paginator.posts %}        {% include post.html %}          {% endfor %}    {% if paginator.previous_page %}    {% if paginator.previous_page == 1 %}      Nyere →    {% else %}      Nyere →    {% endif %}  {% else %}    Nyere →  {% endif %}  {% if paginator.next_page %}    ← Ældre  {% else %}    ← Ældre  {% endif %}  ",
+            "link": "http://infiniteloop.dk/page2/",
+            "date": null,
+            "excerpt": null
+        }
+    
+
+    
+        ,{
+            "title": "Infiniteloop",
+            "content": "    {% for post in paginator.posts %}        {% include post.html %}          {% endfor %}    {% if paginator.previous_page %}    {% if paginator.previous_page == 1 %}      Nyere →    {% else %}      Nyere →    {% endif %}  {% else %}    Nyere →  {% endif %}  {% if paginator.next_page %}    ← Ældre  {% else %}    ← Ældre  {% endif %}  ",
+            "link": "http://infiniteloop.dk/page3/",
+            "date": null,
+            "excerpt": null
+        }
+    
+
+]

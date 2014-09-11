@@ -1,0 +1,28 @@
+---
+layout: default
+title: Infiniteloop
+---
+<div class="posts">
+    {% for post in paginator.posts %}
+        {% include post.html %}
+      <!--li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li-->
+    {% endfor %}
+</div>
+<div class="pagination">
+  <ul class="pager">
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <li class="next"><a href="/index.html">Nyere →</a></li>
+    {% else %}
+      <li class="next"><a href="/page{{ paginator.previous_page }}">Nyere →</a></li>
+    {% endif %}
+  {% else %}
+    <li class="next disabled"><a href="#">Nyere →</a></li>
+  {% endif %}
+  {% if paginator.next_page %}
+    <li class="previous"><a href="/page{{ paginator.next_page }}">← Ældre</a></li>
+  {% else %}
+    <li class="previous disabled"><a href="#">← Ældre</a></li>
+  {% endif %}
+  </ul>
+</div>
